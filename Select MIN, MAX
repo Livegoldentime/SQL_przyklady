@@ -1,0 +1,11 @@
+SELECT MIN(Price) AS SmallestPrice FROM Products;
+
+SmallestPrice
+2.5
+
+SELECT MAX(Price) AS LargestPrice FROM Products;
+
+Result:
+Number of Records: 1
+LargestPrice
+263.5
