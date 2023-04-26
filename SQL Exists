@@ -1,0 +1,32 @@
+SELECT SupplierName FROM Suppliers WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
+
+SupplierName
+Exotic Liquid
+New Orleans Cajun Delights
+Tokyo Traders
+Mayumi's
+Pavlova, Ltd.
+Specialty Biscuits, Ltd.
+PB Knäckebröd AB
+Refrescos Americanas LTDA
+Heli Süßwaren GmbH & Co. KG
+Plutzer Lebensmittelgroßmärkte AG
+Formaggi Fortini s.r.l.
+Norske Meierier
+Bigfoot Breweries
+Svensk Sjöföda AB
+Aux joyeux ecclésiastiques
+New England Seafood Cannery
+Leka Trading
+Lyngbysild
+Zaanse Snoepfabriek
+Karkki Oy
+G'day, Mate
+Ma Maison
+Pasta Buttini s.r.l.
+Escargots Nouveaux
+
+SELECT SupplierName FROM Suppliers WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price = 22);
+
+SupplierName
+New Orleans Cajun Delights
