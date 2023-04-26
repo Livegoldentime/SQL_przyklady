@@ -1,0 +1,243 @@
+SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+
+ProductID	ProductName	SupplierID	CategoryID	Unit	Price
+1	Chais	1	1	10 boxes x 20 bags	18
+2	Chang	1	1	24 - 12 oz bottles	19
+3	Aniseed Syrup	1	2	12 - 550 ml bottles	10
+15	Genen Shouyu	6	2	24 - 250 ml bottles	15.5
+16	Pavlova	7	3	32 - 500 g boxes	17.45
+21	Sir Rodney's Scones	8	3	24 pkgs. x 4 pieces	10
+25	NuNuCa Nuß-Nougat-Creme	11	3	20 - 450 g glasses	14
+31	Gorgonzola Telino	14	4	12 - 100 g pkgs	12.5
+34	Sasquatch Ale	16	1	24 - 12 oz bottles	14
+35	Steeleye Stout	16	1	24 - 12 oz bottles	18
+36	Inlagd Sill	17	8	24 - 250 g jars	19
+39	Chartreuse verte	18	1	750 cc per bottle	18
+40	Boston Crab Meat	19	8	24 - 4 oz tins	18.4
+42	Singaporean Hokkien Fried Mee	20	5	32 - 1 kg pkgs.	14
+44	Gula Malacca	20	2	20 - 2 kg bags	19.45
+46	Spegesild	21	8	4 - 450 g glasses	12
+48	Chocolade	22	3	10 pkgs.	12.75
+49	Maxilaku	23	3	24 - 50 g pkgs.	20
+50	Valkoinen suklaa	23	3	12 - 100 g bars	16.25
+57	Ravioli Angelo	26	5	24 - 250 g pkgs.	19.5
+58	Escargots de Bourgogne	27	8	24 pieces	13.25
+66	Louisiana Hot Spiced Okra	2	2	24 - 8 oz jars	17
+67	Laughing Lumberjack Lager	16	1	24 - 12 oz bottles	14
+68	Scottish Longbreads	8	3	10 boxes x 8 pieces	12.5
+70	Outback Lager	7	1	24 - 355 ml bottles	15
+73	Röd Kaviar	17	8	24 - 150 g jars	15
+74	Longlife Tofu	4	7	5 kg pkg.	10
+76	Lakkalikööri	23	1	500 ml	18
+77	Original Frankfurter grüne Soße	12	2	12 boxes	13
+
+SELECT * FROM Products WHERE Price NOT BETWEEN 10 AND 20;
+
+ProductID	ProductName	SupplierID	CategoryID	Unit	Price
+4	Chef Anton's Cajun Seasoning	2	2	48 - 6 oz jars	22
+5	Chef Anton's Gumbo Mix	2	2	36 boxes	21.35
+6	Grandma's Boysenberry Spread	3	2	12 - 8 oz jars	25
+7	Uncle Bob's Organic Dried Pears	3	7	12 - 1 lb pkgs.	30
+8	Northwoods Cranberry Sauce	3	2	12 - 12 oz jars	40
+9	Mishi Kobe Niku	4	6	18 - 500 g pkgs.	97
+10	Ikura	4	8	12 - 200 ml jars	31
+11	Queso Cabrales	5	4	1 kg pkg.	21
+12	Queso Manchego La Pastora	5	4	10 - 500 g pkgs.	38
+13	Konbu	6	8	2 kg box	6
+14	Tofu	6	7	40 - 100 g pkgs.	23.25
+17	Alice Mutton	7	6	20 - 1 kg tins	39
+18	Carnarvon Tigers	7	8	16 kg pkg.	62.5
+19	Teatime Chocolate Biscuits	8	3	10 boxes x 12 pieces	9.2
+20	Sir Rodney's Marmalade	8	3	30 gift boxes	81
+22	Gustaf's Knäckebröd	9	5	24 - 500 g pkgs.	21
+23	Tunnbröd	9	5	12 - 250 g pkgs.	9
+24	Guaraná Fantástica	10	1	12 - 355 ml cans	4.5
+26	Gumbär Gummibärchen	11	3	100 - 250 g bags	31.23
+27	Schoggi Schokolade	11	3	100 - 100 g pieces	43.9
+28	Rössle Sauerkraut	12	7	25 - 825 g cans	45.6
+29	Thüringer Rostbratwurst	12	6	50 bags x 30 sausgs.	123.79
+30	Nord-Ost Matjeshering	13	8	10 - 200 g glasses	25.89
+32	Mascarpone Fabioli	14	4	24 - 200 g pkgs.	32
+33	Geitost	15	4	500 g	2.5
+37	Gravad lax	17	8	12 - 500 g pkgs.	26
+38	Côte de Blaye	18	1	12 - 75 cl bottles	263.5
+41	Jack's New England Clam Chowder	19	8	12 - 12 oz cans	9.65
+43	Ipoh Coffee	20	1	16 - 500 g tins	46
+45	Røgede sild	21	8	1k pkg.	9.5
+47	Zaanse koeken	22	3	10 - 4 oz boxes	9.5
+51	Manjimup Dried Apples	24	7	50 - 300 g pkgs.	53
+52	Filo Mix	24	5	16 - 2 kg boxes	7
+53	Perth Pasties	24	6	48 pieces	32.8
+54	Tourtière	25	6	16 pies	7.45
+55	Pâté chinois	25	6	24 boxes x 2 pies	24
+56	Gnocchi di nonna Alice	26	5	24 - 250 g pkgs.	38
+59	Raclette Courdavault	28	4	5 kg pkg.	55
+60	Camembert Pierrot	28	4	15 - 300 g rounds	34
+61	Sirop d'érable	29	2	24 - 500 ml bottles	28.5
+62	Tarte au sucre	29	3	48 pies	49.3
+63	Vegie-spread	7	2	15 - 625 g jars	43.9
+64	Wimmers gute Semmelknödel	12	5	20 bags x 4 pieces	33.25
+65	Louisiana Fiery Hot Pepper Sauce	2	2	32 - 8 oz bottles	21.05
+69	Gudbrandsdalsost	15	4	10 kg pkg.	36
+71	Fløtemysost	15	4	10 - 500 g pkgs.	21.5
+72	Mozzarella di Giovanni	14	4	24 - 200 g pkgs.	34.8
+75	Rhönbräu Klosterbier	12	1	24 - 0.5 l bottles	7.75
+
+SELECT * FROM Products WHERE Price BETWEEN 10 AND 20 AND CategoryID NOT IN (1,2,3);
+
+ProductID	ProductName	SupplierID	CategoryID	Unit	Price
+31	Gorgonzola Telino	14	4	12 - 100 g pkgs	12.5
+36	Inlagd Sill	17	8	24 - 250 g jars	19
+40	Boston Crab Meat	19	8	24 - 4 oz tins	18.4
+42	Singaporean Hokkien Fried Mee	20	5	32 - 1 kg pkgs.	14
+46	Spegesild	21	8	4 - 450 g glasses	12
+57	Ravioli Angelo	26	5	24 - 250 g pkgs.	19.5
+58	Escargots de Bourgogne	27	8	24 pieces	13.25
+73	Röd Kaviar	17	8	24 - 150 g jars	15
+74	Longlife Tofu	4	7	5 kg pkg.	10
+
+SELECT * FROM Products WHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni' ORDER BY ProductName;
+
+ProductID	ProductName	SupplierID	CategoryID	Unit	Price
+18	Carnarvon Tigers	7	8	16 kg pkg.	62.5
+1	Chais	1	1	10 boxes x 20 bags	18
+2	Chang	1	1	24 - 12 oz bottles	19
+39	Chartreuse verte	18	1	750 cc per bottle	18
+4	Chef Anton's Cajun Seasoning	2	2	48 - 6 oz jars	22
+5	Chef Anton's Gumbo Mix	2	2	36 boxes	21.35
+48	Chocolade	22	3	10 pkgs.	12.75
+38	Côte de Blaye	18	1	12 - 75 cl bottles	263.5
+58	Escargots de Bourgogne	27	8	24 pieces	13.25
+52	Filo Mix	24	5	16 - 2 kg boxes	7
+71	Fløtemysost	15	4	10 - 500 g pkgs.	21.5
+33	Geitost	15	4	500 g	2.5
+15	Genen Shouyu	6	2	24 - 250 ml bottles	15.5
+56	Gnocchi di nonna Alice	26	5	24 - 250 g pkgs.	38
+31	Gorgonzola Telino	14	4	12 - 100 g pkgs	12.5
+6	Grandma's Boysenberry Spread	3	2	12 - 8 oz jars	25
+37	Gravad lax	17	8	12 - 500 g pkgs.	26
+24	Guaraná Fantástica	10	1	12 - 355 ml cans	4.5
+69	Gudbrandsdalsost	15	4	10 kg pkg.	36
+44	Gula Malacca	20	2	20 - 2 kg bags	19.45
+26	Gumbär Gummibärchen	11	3	100 - 250 g bags	31.23
+22	Gustaf's Knäckebröd	9	5	24 - 500 g pkgs.	21
+10	Ikura	4	8	12 - 200 ml jars	31
+36	Inlagd Sill	17	8	24 - 250 g jars	19
+43	Ipoh Coffee	20	1	16 - 500 g tins	46
+41	Jack's New England Clam Chowder	19	8	12 - 12 oz cans	9.65
+13	Konbu	6	8	2 kg box	6
+76	Lakkalikööri	23	1	500 ml	18
+67	Laughing Lumberjack Lager	16	1	24 - 12 oz bottles	14
+74	Longlife Tofu	4	7	5 kg pkg.	10
+65	Louisiana Fiery Hot Pepper Sauce	2	2	32 - 8 oz bottles	21.05
+66	Louisiana Hot Spiced Okra	2	2	24 - 8 oz jars	17
+51	Manjimup Dried Apples	24	7	50 - 300 g pkgs.	53
+32	Mascarpone Fabioli	14	4	24 - 200 g pkgs.	32
+49	Maxilaku	23	3	24 - 50 g pkgs.	20
+9	Mishi Kobe Niku	4	6	18 - 500 g pkgs.	97
+72	Mozzarella di Giovanni	14	4	24 - 200 g pkgs.	34.8
+
+SELECT * FROM Products WHERE ProductName BETWEEN "Carnarvon Tigers" AND "Chef Anton's Cajun Seasoning" ORDER BY ProductName;
+
+ProductID	ProductName	SupplierID	CategoryID	Unit	Price
+18	Carnarvon Tigers	7	8	16 kg pkg.	62.5
+1	Chais	1	1	10 boxes x 20 bags	18
+2	Chang	1	1	24 - 12 oz bottles	19
+39	Chartreuse verte	18	1	750 cc per bottle	18
+4	Chef Anton's Cajun Seasoning	2	2	48 - 6 oz jars	22
+
+SELECT * FROM Products WHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni' ORDER BY ProductName;
+
+ProductID	ProductName	SupplierID	CategoryID	Unit	Price
+17	Alice Mutton	7	6	20 - 1 kg tins	39
+3	Aniseed Syrup	1	2	12 - 550 ml bottles	10
+40	Boston Crab Meat	19	8	24 - 4 oz tins	18.4
+60	Camembert Pierrot	28	4	15 - 300 g rounds	34
+30	Nord-Ost Matjeshering	13	8	10 - 200 g glasses	25.89
+8	Northwoods Cranberry Sauce	3	2	12 - 12 oz jars	40
+25	NuNuCa Nuß-Nougat-Creme	11	3	20 - 450 g glasses	14
+77	Original Frankfurter grüne Soße	12	2	12 boxes	13
+70	Outback Lager	7	1	24 - 355 ml bottles	15
+16	Pavlova	7	3	32 - 500 g boxes	17.45
+53	Perth Pasties	24	6	48 pieces	32.8
+55	Pâté chinois	25	6	24 boxes x 2 pies	24
+11	Queso Cabrales	5	4	1 kg pkg.	21
+12	Queso Manchego La Pastora	5	4	10 - 500 g pkgs.	38
+59	Raclette Courdavault	28	4	5 kg pkg.	55
+57	Ravioli Angelo	26	5	24 - 250 g pkgs.	19.5
+75	Rhönbräu Klosterbier	12	1	24 - 0.5 l bottles	7.75
+73	Röd Kaviar	17	8	24 - 150 g jars	15
+28	Rössle Sauerkraut	12	7	25 - 825 g cans	45.6
+45	Røgede sild	21	8	1k pkg.	9.5
+34	Sasquatch Ale	16	1	24 - 12 oz bottles	14
+27	Schoggi Schokolade	11	3	100 - 100 g pieces	43.9
+68	Scottish Longbreads	8	3	10 boxes x 8 pieces	12.5
+42	Singaporean Hokkien Fried Mee	20	5	32 - 1 kg pkgs.	14
+20	Sir Rodney's Marmalade	8	3	30 gift boxes	81
+21	Sir Rodney's Scones	8	3	24 pkgs. x 4 pieces	10
+61	Sirop d'érable	29	2	24 - 500 ml bottles	28.5
+46	Spegesild	21	8	4 - 450 g glasses	12
+35	Steeleye Stout	16	1	24 - 12 oz bottles	18
+62	Tarte au sucre	29	3	48 pies	49.3
+19	Teatime Chocolate Biscuits	8	3	10 boxes x 12 pieces	9.2
+29	Thüringer Rostbratwurst	12	6	50 bags x 30 sausgs.	123.79
+14	Tofu	6	7	40 - 100 g pkgs.	23.25
+54	Tourtière	25	6	16 pies	7.45
+23	Tunnbröd	9	5	12 - 250 g pkgs.	9
+7	Uncle Bob's Organic Dried Pears	3	7	12 - 1 lb pkgs.	30
+50	Valkoinen suklaa	23	3	12 - 100 g bars	16.25
+63	Vegie-spread	7	2	15 - 625 g jars	43.9
+64	Wimmers gute Semmelknödel	12	5	20 bags x 4 pieces	33.25
+47	Zaanse koeken	22	3	10 - 4 oz boxes	9.5
+
+SELECT * FROM Orders WHERE OrderDate BETWEEN #07/01/1996# AND #07/31/1996#;
+
+OrderID	CustomerID	EmployeeID	OrderDate	ShipperID
+10248 	90 	5 	7/4/1996 	3 
+10249 	81 	6 	7/5/1996 	1 
+10250 	34 	4 	7/8/1996 	2 
+10251 	84 	3 	7/8/1996 	1 
+10252 	76 	4 	7/9/1996 	2 
+10253 	34 	3 	7/10/1996 	2 
+10254 	14 	5 	7/11/1996 	2 
+10255 	68 	9 	7/12/1996 	3 
+10256 	88 	3 	7/15/1996 	2 
+10257 	35 	4 	7/16/1996 	3 
+10258 	20 	1 	7/17/1996 	1 
+10259 	13 	4 	7/18/1996 	3 
+10260 	55 	4 	7/19/1996 	1 
+10261 	61 	4 	7/19/1996 	2 
+10262 	65 	8 	7/22/1996 	3 
+10263 	20 	9 	7/23/1996 	3 
+10264 	24 	6 	7/24/1996 	3 
+10265 	7 	2 	7/25/1996 	1 
+10266 	87 	3 	7/26/1996 	3 
+10267 	25 	4 	7/29/1996 	1 
+10268 	33 	8 	7/30/1996 	3 
+10269 	89 	5 	7/31/1996 	1 
+
+SELECT * FROM Orders WHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';
+
+OrderID	CustomerID	EmployeeID	OrderDate	ShipperID
+10248	90	5	1996-07-04	3
+10249	81	6	1996-07-05	1
+10250	34	4	1996-07-08	2
+10251	84	3	1996-07-08	1
+10252	76	4	1996-07-09	2
+10253	34	3	1996-07-10	2
+10254	14	5	1996-07-11	2
+10255	68	9	1996-07-12	3
+10256	88	3	1996-07-15	2
+10257	35	4	1996-07-16	3
+10258	20	1	1996-07-17	1
+10259	13	4	1996-07-18	3
+10260	55	4	1996-07-19	1
+10261	61	4	1996-07-19	2
+10262	65	8	1996-07-22	3
+10263	20	9	1996-07-23	3
+10264	24	6	1996-07-24	3
+10265	7	2	1996-07-25	1
+10266	87	3	1996-07-26	3
+10267	25	4	1996-07-29	1
+10268	33	8	1996-07-30	3
+10269	89	5	1996-07-31	1
