@@ -1,0 +1,22 @@
+SELECT COUNT(ProductID) FROM Products;
+
+Result:
+Number of Records: 1
+COUNT(ProductID)
+77
+
+SELECT AVG(Price) FROM Products;
+
+
+Result:
+Number of Records: 1
+AVG(Price)
+28.866363636363637
+
+
+SELECT SUM(Quantity) FROM OrderDetails;
+
+Result:
+Number of Records: 1
+SUM(Quantity)
+12743
