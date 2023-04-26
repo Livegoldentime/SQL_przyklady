@@ -1,0 +1,14 @@
+INSERT INTO Customers (CustomerName, City, Country) SELECT SupplierName, City, Country FROM Suppliers;
+
+Result:
+You have made changes to the database. Rows affected: 29
+
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) SELECT SupplierName, ContactName, Address, City, PostalCode, Country FROM Suppliers
+
+Result:
+You have made changes to the database. Rows affected: 29
+
+INSERT INTO Customers (CustomerName, City, Country) SELECT SupplierName, City, Country FROM Suppliers WHERE Country='Germany';
+
+Result:
+You have made changes to the database. Rows affected: 3
