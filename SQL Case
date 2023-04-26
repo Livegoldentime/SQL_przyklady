@@ -1,0 +1,2265 @@
+SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+    WHEN Quantity = 30 THEN 'The quantity is 30'
+    ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails;
+
+rderID	Quantity	QuantityText
+10248	12	The quantity is under 30
+10248	10	The quantity is under 30
+10248	5	The quantity is under 30
+10249	9	The quantity is under 30
+10249	40	The quantity is greater than 30
+10250	10	The quantity is under 30
+10250	35	The quantity is greater than 30
+10250	15	The quantity is under 30
+10251	6	The quantity is under 30
+10251	15	The quantity is under 30
+10251	20	The quantity is under 30
+10252	40	The quantity is greater than 30
+10252	25	The quantity is under 30
+10252	40	The quantity is greater than 30
+10253	20	The quantity is under 30
+10253	42	The quantity is greater than 30
+10253	40	The quantity is greater than 30
+10254	15	The quantity is under 30
+10254	21	The quantity is under 30
+10254	21	The quantity is under 30
+10255	20	The quantity is under 30
+10255	35	The quantity is greater than 30
+10255	25	The quantity is under 30
+10255	30	The quantity is 30
+10256	15	The quantity is under 30
+10256	12	The quantity is under 30
+10257	25	The quantity is under 30
+10257	6	The quantity is under 30
+10257	15	The quantity is under 30
+10258	50	The quantity is greater than 30
+10258	65	The quantity is greater than 30
+10258	6	The quantity is under 30
+10259	10	The quantity is under 30
+10259	1	The quantity is under 30
+10260	16	The quantity is under 30
+10260	50	The quantity is greater than 30
+10260	15	The quantity is under 30
+10260	21	The quantity is under 30
+10261	20	The quantity is under 30
+10261	20	The quantity is under 30
+10262	12	The quantity is under 30
+10262	15	The quantity is under 30
+10262	2	The quantity is under 30
+10263	60	The quantity is greater than 30
+10263	28	The quantity is under 30
+10263	60	The quantity is greater than 30
+10263	36	The quantity is greater than 30
+10264	35	The quantity is greater than 30
+10264	25	The quantity is under 30
+10265	30	The quantity is 30
+10265	20	The quantity is under 30
+10266	12	The quantity is under 30
+10267	50	The quantity is greater than 30
+10267	70	The quantity is greater than 30
+10267	15	The quantity is under 30
+10268	10	The quantity is under 30
+10268	4	The quantity is under 30
+10269	60	The quantity is greater than 30
+10269	20	The quantity is under 30
+10270	30	The quantity is 30
+10270	25	The quantity is under 30
+10271	24	The quantity is under 30
+10272	6	The quantity is under 30
+10272	40	The quantity is greater than 30
+10272	24	The quantity is under 30
+10273	24	The quantity is under 30
+10273	15	The quantity is under 30
+10273	20	The quantity is under 30
+10273	60	The quantity is greater than 30
+10273	33	The quantity is greater than 30
+10274	20	The quantity is under 30
+10274	7	The quantity is under 30
+10275	12	The quantity is under 30
+10275	6	The quantity is under 30
+10276	15	The quantity is under 30
+10276	10	The quantity is under 30
+10277	20	The quantity is under 30
+10277	12	The quantity is under 30
+10278	16	The quantity is under 30
+10278	15	The quantity is under 30
+10278	8	The quantity is under 30
+10278	25	The quantity is under 30
+10279	15	The quantity is under 30
+10280	12	The quantity is under 30
+10280	20	The quantity is under 30
+10280	30	The quantity is 30
+10281	1	The quantity is under 30
+10281	6	The quantity is under 30
+10281	4	The quantity is under 30
+10282	6	The quantity is under 30
+10282	2	The quantity is under 30
+10283	20	The quantity is under 30
+10283	18	The quantity is under 30
+10283	35	The quantity is greater than 30
+10283	3	The quantity is under 30
+10284	15	The quantity is under 30
+10284	21	The quantity is under 30
+10284	20	The quantity is under 30
+10284	5	The quantity is under 30
+10285	45	The quantity is greater than 30
+10285	40	The quantity is greater than 30
+10285	36	The quantity is greater than 30
+10286	100	The quantity is greater than 30
+10286	40	The quantity is greater than 30
+10287	40	The quantity is greater than 30
+10287	20	The quantity is under 30
+10287	15	The quantity is under 30
+10288	10	The quantity is under 30
+10288	3	The quantity is under 30
+10289	30	The quantity is 30
+10289	9	The quantity is under 30
+10290	20	The quantity is under 30
+10290	15	The quantity is under 30
+10290	15	The quantity is under 30
+10290	10	The quantity is under 30
+10291	20	The quantity is under 30
+10291	24	The quantity is under 30
+10291	2	The quantity is under 30
+10292	20	The quantity is under 30
+10293	12	The quantity is under 30
+10293	10	The quantity is under 30
+10293	5	The quantity is under 30
+10293	6	The quantity is under 30
+10294	18	The quantity is under 30
+10294	15	The quantity is under 30
+10294	15	The quantity is under 30
+10294	21	The quantity is under 30
+10294	6	The quantity is under 30
+10295	4	The quantity is under 30
+10296	12	The quantity is under 30
+10296	30	The quantity is 30
+10296	15	The quantity is under 30
+10297	60	The quantity is greater than 30
+10297	20	The quantity is under 30
+10298	40	The quantity is greater than 30
+10298	40	The quantity is greater than 30
+10298	30	The quantity is 30
+10298	15	The quantity is under 30
+10299	15	The quantity is under 30
+10299	20	The quantity is under 30
+10300	30	The quantity is 30
+10300	20	The quantity is under 30
+10301	10	The quantity is under 30
+10301	20	The quantity is under 30
+10302	40	The quantity is greater than 30
+10302	28	The quantity is under 30
+10302	12	The quantity is under 30
+10303	40	The quantity is greater than 30
+10303	30	The quantity is 30
+10303	15	The quantity is under 30
+10304	30	The quantity is 30
+10304	10	The quantity is under 30
+10304	2	The quantity is under 30
+10305	25	The quantity is under 30
+10305	25	The quantity is under 30
+10305	30	The quantity is 30
+10306	10	The quantity is under 30
+10306	10	The quantity is under 30
+10306	5	The quantity is under 30
+10307	10	The quantity is under 30
+10307	3	The quantity is under 30
+10308	1	The quantity is under 30
+10308	5	The quantity is under 30
+10309	20	The quantity is under 30
+10309	30	The quantity is 30
+10309	2	The quantity is under 30
+10309	20	The quantity is under 30
+10309	3	The quantity is under 30
+10310	10	The quantity is under 30
+10310	5	The quantity is under 30
+10311	6	The quantity is under 30
+10311	7	The quantity is under 30
+10312	4	The quantity is under 30
+10312	24	The quantity is under 30
+10312	20	The quantity is under 30
+10312	10	The quantity is under 30
+10313	12	The quantity is under 30
+10314	40	The quantity is greater than 30
+10314	30	The quantity is 30
+10314	25	The quantity is under 30
+10315	14	The quantity is under 30
+10315	30	The quantity is 30
+10316	10	The quantity is under 30
+10316	70	The quantity is greater than 30
+10317	20	The quantity is under 30
+10318	20	The quantity is under 30
+10318	6	The quantity is under 30
+10319	8	The quantity is under 30
+10319	14	The quantity is under 30
+10319	30	The quantity is 30
+10320	30	The quantity is 30
+10321	10	The quantity is under 30
+10322	20	The quantity is under 30
+10323	5	The quantity is under 30
+10323	4	The quantity is under 30
+10323	4	The quantity is under 30
+10324	21	The quantity is under 30
+10324	70	The quantity is greater than 30
+10324	30	The quantity is 30
+10324	40	The quantity is greater than 30
+10324	80	The quantity is greater than 30
+10325	6	The quantity is under 30
+10325	12	The quantity is under 30
+10325	9	The quantity is under 30
+10325	4	The quantity is under 30
+10325	40	The quantity is greater than 30
+10326	24	The quantity is under 30
+10326	16	The quantity is under 30
+10326	50	The quantity is greater than 30
+10327	25	The quantity is under 30
+10327	50	The quantity is greater than 30
+10327	35	The quantity is greater than 30
+10327	30	The quantity is 30
+10328	9	The quantity is under 30
+10328	40	The quantity is greater than 30
+10328	10	The quantity is under 30
+10329	10	The quantity is under 30
+10329	8	The quantity is under 30
+10329	20	The quantity is under 30
+10329	12	The quantity is under 30
+10330	50	The quantity is greater than 30
+10330	25	The quantity is under 30
+10331	15	The quantity is under 30
+10332	40	The quantity is greater than 30
+10332	10	The quantity is under 30
+10332	16	The quantity is under 30
+10333	10	The quantity is under 30
+10333	10	The quantity is under 30
+10333	40	The quantity is greater than 30
+10334	8	The quantity is under 30
+10334	10	The quantity is under 30
+10335	7	The quantity is under 30
+10335	25	The quantity is under 30
+10335	6	The quantity is under 30
+10335	48	The quantity is greater than 30
+10336	18	The quantity is under 30
+10337	40	The quantity is greater than 30
+10337	24	The quantity is under 30
+10337	20	The quantity is under 30
+10337	28	The quantity is under 30
+10337	25	The quantity is under 30
+10338	20	The quantity is under 30
+10338	15	The quantity is under 30
+10339	10	The quantity is under 30
+10339	70	The quantity is greater than 30
+10339	28	The quantity is under 30
+10340	20	The quantity is under 30
+10340	12	The quantity is under 30
+10340	40	The quantity is greater than 30
+10341	8	The quantity is under 30
+10341	9	The quantity is under 30
+10342	24	The quantity is under 30
+10342	56	The quantity is greater than 30
+10342	40	The quantity is greater than 30
+10342	40	The quantity is greater than 30
+10343	50	The quantity is greater than 30
+10343	4	The quantity is under 30
+10343	15	The quantity is under 30
+10344	35	The quantity is greater than 30
+10344	70	The quantity is greater than 30
+10345	70	The quantity is greater than 30
+10345	80	The quantity is greater than 30
+10345	9	The quantity is under 30
+10346	36	The quantity is greater than 30
+10346	20	The quantity is under 30
+10347	10	The quantity is under 30
+10347	50	The quantity is greater than 30
+10347	4	The quantity is under 30
+10347	6	The quantity is under 30
+10348	15	The quantity is under 30
+10348	25	The quantity is under 30
+10349	24	The quantity is under 30
+10350	15	The quantity is under 30
+10350	18	The quantity is under 30
+10351	20	The quantity is under 30
+10351	13	The quantity is under 30
+10351	77	The quantity is greater than 30
+10351	10	The quantity is under 30
+10352	10	The quantity is under 30
+10352	20	The quantity is under 30
+10353	12	The quantity is under 30
+10353	50	The quantity is greater than 30
+10354	12	The quantity is under 30
+10354	4	The quantity is under 30
+10355	25	The quantity is under 30
+10355	25	The quantity is under 30
+10356	30	The quantity is 30
+10356	12	The quantity is under 30
+10356	20	The quantity is under 30
+10357	30	The quantity is 30
+10357	16	The quantity is under 30
+10357	8	The quantity is under 30
+10358	10	The quantity is under 30
+10358	10	The quantity is under 30
+10358	20	The quantity is under 30
+10359	56	The quantity is greater than 30
+10359	70	The quantity is greater than 30
+10359	80	The quantity is greater than 30
+10360	30	The quantity is 30
+10360	35	The quantity is greater than 30
+10360	10	The quantity is under 30
+10360	35	The quantity is greater than 30
+10360	28	The quantity is under 30
+10361	54	The quantity is greater than 30
+10361	55	The quantity is greater than 30
+10362	50	The quantity is greater than 30
+10362	20	The quantity is under 30
+10362	24	The quantity is under 30
+10363	20	The quantity is under 30
+10363	12	The quantity is under 30
+10363	12	The quantity is under 30
+10364	30	The quantity is 30
+10364	5	The quantity is under 30
+10365	24	The quantity is under 30
+10366	5	The quantity is under 30
+10366	5	The quantity is under 30
+10367	36	The quantity is greater than 30
+10367	18	The quantity is under 30
+10367	15	The quantity is under 30
+10367	7	The quantity is under 30
+10368	5	The quantity is under 30
+10368	13	The quantity is under 30
+10368	25	The quantity is under 30
+10368	35	The quantity is greater than 30
+10369	20	The quantity is under 30
+10369	18	The quantity is under 30
+10370	15	The quantity is under 30
+10370	30	The quantity is 30
+10370	20	The quantity is under 30
+10371	6	The quantity is under 30
+10372	12	The quantity is under 30
+10372	40	The quantity is greater than 30
+10372	70	The quantity is greater than 30
+10372	42	The quantity is greater than 30
+10373	80	The quantity is greater than 30
+10373	50	The quantity is greater than 30
+10374	30	The quantity is 30
+10374	15	The quantity is under 30
+10375	15	The quantity is under 30
+10375	10	The quantity is under 30
+10376	42	The quantity is greater than 30
+10377	20	The quantity is under 30
+10377	20	The quantity is under 30
+10378	6	The quantity is under 30
+10379	8	The quantity is under 30
+10379	16	The quantity is under 30
+10379	20	The quantity is under 30
+10380	18	The quantity is under 30
+10380	20	The quantity is under 30
+10380	6	The quantity is under 30
+10380	30	The quantity is 30
+10381	14	The quantity is under 30
+10382	32	The quantity is greater than 30
+10382	9	The quantity is under 30
+10382	14	The quantity is under 30
+10382	60	The quantity is greater than 30
+10382	50	The quantity is greater than 30
+10383	20	The quantity is under 30
+10383	15	The quantity is under 30
+10383	20	The quantity is under 30
+10384	28	The quantity is under 30
+10384	15	The quantity is under 30
+10385	10	The quantity is under 30
+10385	20	The quantity is under 30
+10385	8	The quantity is under 30
+10386	15	The quantity is under 30
+10386	10	The quantity is under 30
+10387	15	The quantity is under 30
+10387	6	The quantity is under 30
+10387	12	The quantity is under 30
+10387	15	The quantity is under 30
+10388	15	The quantity is under 30
+10388	20	The quantity is under 30
+10388	40	The quantity is greater than 30
+10389	16	The quantity is under 30
+10389	15	The quantity is under 30
+10389	20	The quantity is under 30
+10389	30	The quantity is 30
+10390	60	The quantity is greater than 30
+10390	40	The quantity is greater than 30
+10390	45	The quantity is greater than 30
+10390	24	The quantity is under 30
+10391	18	The quantity is under 30
+10392	50	The quantity is greater than 30
+10393	25	The quantity is under 30
+10393	42	The quantity is greater than 30
+10393	7	The quantity is under 30
+10393	70	The quantity is greater than 30
+10393	32	The quantity is greater than 30
+10394	10	The quantity is under 30
+10394	10	The quantity is under 30
+10395	28	The quantity is under 30
+10395	70	The quantity is greater than 30
+10395	8	The quantity is under 30
+10396	40	The quantity is greater than 30
+10396	60	The quantity is greater than 30
+10396	21	The quantity is under 30
+10397	10	The quantity is under 30
+10397	18	The quantity is under 30
+10398	30	The quantity is 30
+10398	120	The quantity is greater than 30
+10399	60	The quantity is greater than 30
+10399	30	The quantity is 30
+10399	35	The quantity is greater than 30
+10399	14	The quantity is under 30
+10400	21	The quantity is under 30
+10400	35	The quantity is greater than 30
+10400	30	The quantity is 30
+10401	18	The quantity is under 30
+10401	70	The quantity is greater than 30
+10401	20	The quantity is under 30
+10401	60	The quantity is greater than 30
+10402	60	The quantity is greater than 30
+10402	65	The quantity is greater than 30
+10403	21	The quantity is under 30
+10403	70	The quantity is greater than 30
+10404	30	The quantity is 30
+10404	40	The quantity is greater than 30
+10404	30	The quantity is 30
+10405	50	The quantity is greater than 30
+10406	10	The quantity is under 30
+10406	30	The quantity is 30
+10406	42	The quantity is greater than 30
+10406	5	The quantity is under 30
+10406	2	The quantity is under 30
+10407	30	The quantity is 30
+10407	15	The quantity is under 30
+10407	15	The quantity is under 30
+10408	10	The quantity is under 30
+10408	6	The quantity is under 30
+10408	35	The quantity is greater than 30
+10409	12	The quantity is under 30
+10409	12	The quantity is under 30
+10410	49	The quantity is greater than 30
+10410	16	The quantity is under 30
+10411	25	The quantity is under 30
+10411	40	The quantity is greater than 30
+10411	9	The quantity is under 30
+10412	20	The quantity is under 30
+10413	24	The quantity is under 30
+10413	40	The quantity is greater than 30
+10413	14	The quantity is under 30
+10414	18	The quantity is under 30
+10414	50	The quantity is greater than 30
+10415	2	The quantity is under 30
+10415	20	The quantity is under 30
+10416	20	The quantity is under 30
+10416	10	The quantity is under 30
+10416	20	The quantity is under 30
+10417	50	The quantity is greater than 30
+10417	2	The quantity is under 30
+10417	36	The quantity is greater than 30
+10417	35	The quantity is greater than 30
+10418	60	The quantity is greater than 30
+10418	55	The quantity is greater than 30
+10418	16	The quantity is under 30
+10418	15	The quantity is under 30
+10419	60	The quantity is greater than 30
+10419	20	The quantity is under 30
+10420	20	The quantity is under 30
+10420	2	The quantity is under 30
+10420	8	The quantity is under 30
+10420	20	The quantity is under 30
+10421	4	The quantity is under 30
+10421	30	The quantity is 30
+10421	15	The quantity is under 30
+10421	10	The quantity is under 30
+10422	2	The quantity is under 30
+10423	14	The quantity is under 30
+10423	20	The quantity is under 30
+10424	60	The quantity is greater than 30
+10424	49	The quantity is greater than 30
+10424	30	The quantity is 30
+10425	10	The quantity is under 30
+10425	20	The quantity is under 30
+10426	5	The quantity is under 30
+10426	7	The quantity is under 30
+10427	35	The quantity is greater than 30
+10428	20	The quantity is under 30
+10429	40	The quantity is greater than 30
+10429	35	The quantity is greater than 30
+10430	45	The quantity is greater than 30
+10430	50	The quantity is greater than 30
+10430	30	The quantity is 30
+10430	70	The quantity is greater than 30
+10431	50	The quantity is greater than 30
+10431	50	The quantity is greater than 30
+10431	30	The quantity is 30
+10432	10	The quantity is under 30
+10432	40	The quantity is greater than 30
+10433	28	The quantity is under 30
+10434	6	The quantity is under 30
+10434	18	The quantity is under 30
+10435	10	The quantity is under 30
+10435	12	The quantity is under 30
+10435	10	The quantity is under 30
+10436	5	The quantity is under 30
+10436	40	The quantity is greater than 30
+10436	30	The quantity is 30
+10436	24	The quantity is under 30
+10437	15	The quantity is under 30
+10438	15	The quantity is under 30
+10438	20	The quantity is under 30
+10438	15	The quantity is under 30
+10439	15	The quantity is under 30
+10439	16	The quantity is under 30
+10439	6	The quantity is under 30
+10439	30	The quantity is 30
+10440	45	The quantity is greater than 30
+10440	49	The quantity is greater than 30
+10440	24	The quantity is under 30
+10440	90	The quantity is greater than 30
+10441	50	The quantity is greater than 30
+10442	30	The quantity is 30
+10442	80	The quantity is greater than 30
+10442	60	The quantity is greater than 30
+10443	6	The quantity is under 30
+10443	12	The quantity is under 30
+10444	10	The quantity is under 30
+10444	15	The quantity is under 30
+10444	8	The quantity is under 30
+10444	30	The quantity is 30
+10445	6	The quantity is under 30
+10445	15	The quantity is under 30
+10446	12	The quantity is under 30
+10446	20	The quantity is under 30
+10446	3	The quantity is under 30
+10446	15	The quantity is under 30
+10447	40	The quantity is greater than 30
+10447	35	The quantity is greater than 30
+10447	2	The quantity is under 30
+10448	6	The quantity is under 30
+10448	20	The quantity is under 30
+10449	14	The quantity is under 30
+10449	20	The quantity is under 30
+10449	35	The quantity is greater than 30
+10450	20	The quantity is under 30
+10450	6	The quantity is under 30
+10451	120	The quantity is greater than 30
+10451	35	The quantity is greater than 30
+10451	28	The quantity is under 30
+10451	55	The quantity is greater than 30
+10452	15	The quantity is under 30
+10452	100	The quantity is greater than 30
+10453	15	The quantity is under 30
+10453	25	The quantity is under 30
+10454	20	The quantity is under 30
+10454	20	The quantity is under 30
+10454	10	The quantity is under 30
+10455	20	The quantity is under 30
+10455	50	The quantity is greater than 30
+10455	25	The quantity is under 30
+10455	30	The quantity is 30
+10456	40	The quantity is greater than 30
+10456	21	The quantity is under 30
+10457	36	The quantity is greater than 30
+10458	30	The quantity is 30
+10458	30	The quantity is 30
+10458	20	The quantity is under 30
+10458	15	The quantity is under 30
+10458	50	The quantity is greater than 30
+10459	16	The quantity is under 30
+10459	20	The quantity is under 30
+10459	40	The quantity is greater than 30
+10460	21	The quantity is under 30
+10460	4	The quantity is under 30
+10461	40	The quantity is greater than 30
+10461	28	The quantity is under 30
+10461	60	The quantity is greater than 30
+10462	1	The quantity is under 30
+10462	21	The quantity is under 30
+10463	21	The quantity is under 30
+10463	50	The quantity is greater than 30
+10464	16	The quantity is under 30
+10464	3	The quantity is under 30
+10464	30	The quantity is 30
+10464	20	The quantity is under 30
+10465	25	The quantity is under 30
+10465	18	The quantity is under 30
+10465	20	The quantity is under 30
+10465	30	The quantity is 30
+10465	25	The quantity is under 30
+10466	10	The quantity is under 30
+10466	5	The quantity is under 30
+10467	28	The quantity is under 30
+10467	12	The quantity is under 30
+10468	8	The quantity is under 30
+10468	15	The quantity is under 30
+10469	40	The quantity is greater than 30
+10469	35	The quantity is greater than 30
+10469	2	The quantity is under 30
+10470	30	The quantity is 30
+10470	15	The quantity is under 30
+10470	8	The quantity is under 30
+10471	30	The quantity is 30
+10471	20	The quantity is under 30
+10472	80	The quantity is greater than 30
+10472	18	The quantity is under 30
+10473	12	The quantity is under 30
+10473	12	The quantity is under 30
+10474	12	The quantity is under 30
+10474	18	The quantity is under 30
+10474	21	The quantity is under 30
+10474	10	The quantity is under 30
+10475	35	The quantity is greater than 30
+10475	60	The quantity is greater than 30
+10475	42	The quantity is greater than 30
+10476	2	The quantity is under 30
+10476	12	The quantity is under 30
+10477	15	The quantity is under 30
+10477	21	The quantity is under 30
+10477	20	The quantity is under 30
+10478	20	The quantity is under 30
+10479	30	The quantity is 30
+10479	28	The quantity is under 30
+10479	60	The quantity is greater than 30
+10479	30	The quantity is 30
+10480	30	The quantity is 30
+10480	12	The quantity is under 30
+10481	24	The quantity is under 30
+10481	40	The quantity is greater than 30
+10482	10	The quantity is under 30
+10483	35	The quantity is greater than 30
+10483	30	The quantity is 30
+10484	14	The quantity is under 30
+10484	10	The quantity is under 30
+10484	3	The quantity is under 30
+10485	20	The quantity is under 30
+10485	20	The quantity is under 30
+10485	30	The quantity is 30
+10485	60	The quantity is greater than 30
+10486	5	The quantity is under 30
+10486	25	The quantity is under 30
+10486	16	The quantity is under 30
+10487	5	The quantity is under 30
+10487	30	The quantity is 30
+10487	24	The quantity is under 30
+10488	30	The quantity is 30
+10488	20	The quantity is under 30
+10489	15	The quantity is under 30
+10489	18	The quantity is under 30
+10490	60	The quantity is greater than 30
+10490	30	The quantity is 30
+10490	36	The quantity is greater than 30
+10491	15	The quantity is under 30
+10491	7	The quantity is under 30
+10492	60	The quantity is greater than 30
+10492	20	The quantity is under 30
+10493	15	The quantity is under 30
+10493	10	The quantity is under 30
+10493	10	The quantity is under 30
+10494	30	The quantity is 30
+10495	10	The quantity is under 30
+10495	20	The quantity is under 30
+10495	5	The quantity is under 30
+10496	20	The quantity is under 30
+10497	14	The quantity is under 30
+10497	25	The quantity is under 30
+10497	25	The quantity is under 30
+10498	14	The quantity is under 30
+10498	5	The quantity is under 30
+10498	30	The quantity is 30
+10499	20	The quantity is under 30
+10499	25	The quantity is under 30
+10500	12	The quantity is under 30
+10500	8	The quantity is under 30
+10501	20	The quantity is under 30
+10502	21	The quantity is under 30
+10502	6	The quantity is under 30
+10502	30	The quantity is 30
+10503	70	The quantity is greater than 30
+10503	20	The quantity is under 30
+10504	12	The quantity is under 30
+10504	12	The quantity is under 30
+10504	10	The quantity is under 30
+10504	25	The quantity is under 30
+10505	3	The quantity is under 30
+10506	18	The quantity is under 30
+10506	14	The quantity is under 30
+10507	15	The quantity is under 30
+10507	15	The quantity is under 30
+10508	10	The quantity is under 30
+10508	10	The quantity is under 30
+10509	3	The quantity is under 30
+10510	36	The quantity is greater than 30
+10510	36	The quantity is greater than 30
+10511	50	The quantity is greater than 30
+10511	50	The quantity is greater than 30
+10511	10	The quantity is under 30
+10512	10	The quantity is under 30
+10512	9	The quantity is under 30
+10512	6	The quantity is under 30
+10512	12	The quantity is under 30
+10513	40	The quantity is greater than 30
+10513	50	The quantity is greater than 30
+10513	15	The quantity is under 30
+10514	39	The quantity is greater than 30
+10514	35	The quantity is greater than 30
+10514	70	The quantity is greater than 30
+10514	39	The quantity is greater than 30
+10514	50	The quantity is greater than 30
+10515	16	The quantity is under 30
+10515	50	The quantity is greater than 30
+10515	120	The quantity is greater than 30
+10515	16	The quantity is under 30
+10515	84	The quantity is greater than 30
+10516	25	The quantity is under 30
+10516	80	The quantity is greater than 30
+10516	20	The quantity is under 30
+10517	6	The quantity is under 30
+10517	4	The quantity is under 30
+10517	6	The quantity is under 30
+10518	5	The quantity is under 30
+10518	15	The quantity is under 30
+10518	9	The quantity is under 30
+10519	16	The quantity is under 30
+10519	40	The quantity is greater than 30
+10519	10	The quantity is under 30
+10520	8	The quantity is under 30
+10520	5	The quantity is under 30
+10521	3	The quantity is under 30
+10521	10	The quantity is under 30
+10521	6	The quantity is under 30
+10522	40	The quantity is greater than 30
+10522	24	The quantity is under 30
+10522	20	The quantity is under 30
+10522	25	The quantity is under 30
+10523	25	The quantity is under 30
+10523	15	The quantity is under 30
+10523	18	The quantity is under 30
+10523	6	The quantity is under 30
+10524	2	The quantity is under 30
+10524	10	The quantity is under 30
+10524	60	The quantity is greater than 30
+10524	15	The quantity is under 30
+10525	30	The quantity is 30
+10525	15	The quantity is under 30
+10526	8	The quantity is under 30
+10526	10	The quantity is under 30
+10526	30	The quantity is 30
+10527	50	The quantity is greater than 30
+10527	30	The quantity is 30
+10528	3	The quantity is under 30
+10528	8	The quantity is under 30
+10528	9	The quantity is under 30
+10529	14	The quantity is under 30
+10529	20	The quantity is under 30
+10529	10	The quantity is under 30
+10530	40	The quantity is greater than 30
+10530	25	The quantity is under 30
+10530	20	The quantity is under 30
+10530	50	The quantity is greater than 30
+10531	2	The quantity is under 30
+10532	15	The quantity is under 30
+10532	24	The quantity is under 30
+10533	50	The quantity is greater than 30
+10533	24	The quantity is under 30
+10533	24	The quantity is under 30
+10534	10	The quantity is under 30
+10534	10	The quantity is under 30
+10534	10	The quantity is under 30
+10535	50	The quantity is greater than 30
+10535	10	The quantity is under 30
+10535	5	The quantity is under 30
+10535	15	The quantity is under 30
+10536	15	The quantity is under 30
+10536	20	The quantity is under 30
+10536	30	The quantity is 30
+10536	35	The quantity is greater than 30
+10537	30	The quantity is 30
+10537	6	The quantity is under 30
+10537	20	The quantity is under 30
+10537	21	The quantity is under 30
+10537	9	The quantity is under 30
+10538	7	The quantity is under 30
+10538	1	The quantity is under 30
+10539	8	The quantity is under 30
+10539	15	The quantity is under 30
+10539	15	The quantity is under 30
+10539	6	The quantity is under 30
+10540	60	The quantity is greater than 30
+10540	40	The quantity is greater than 30
+10540	30	The quantity is 30
+10540	35	The quantity is greater than 30
+10541	35	The quantity is greater than 30
+10541	4	The quantity is under 30
+10541	36	The quantity is greater than 30
+10541	9	The quantity is under 30
+10542	15	The quantity is under 30
+10542	24	The quantity is under 30
+10543	30	The quantity is 30
+10543	70	The quantity is greater than 30
+10544	7	The quantity is under 30
+10544	7	The quantity is under 30
+10545	10	The quantity is under 30
+10546	10	The quantity is under 30
+10546	30	The quantity is 30
+10546	40	The quantity is greater than 30
+10547	24	The quantity is under 30
+10547	60	The quantity is greater than 30
+10548	10	The quantity is under 30
+10548	14	The quantity is under 30
+10549	55	The quantity is greater than 30
+10549	100	The quantity is greater than 30
+10549	48	The quantity is greater than 30
+10550	8	The quantity is under 30
+10550	10	The quantity is under 30
+10550	6	The quantity is under 30
+10550	10	The quantity is under 30
+10551	40	The quantity is greater than 30
+10551	20	The quantity is under 30
+10551	40	The quantity is greater than 30
+10552	18	The quantity is under 30
+10552	30	The quantity is 30
+10553	15	The quantity is under 30
+10553	14	The quantity is under 30
+10553	24	The quantity is under 30
+10553	30	The quantity is 30
+10553	6	The quantity is under 30
+10554	30	The quantity is 30
+10554	20	The quantity is under 30
+10554	20	The quantity is under 30
+10554	10	The quantity is under 30
+10555	30	The quantity is 30
+10555	35	The quantity is greater than 30
+10555	18	The quantity is under 30
+10555	20	The quantity is under 30
+10555	40	The quantity is greater than 30
+10556	24	The quantity is under 30
+10557	30	The quantity is 30
+10557	20	The quantity is under 30
+10558	25	The quantity is under 30
+10558	20	The quantity is under 30
+10558	30	The quantity is 30
+10558	18	The quantity is under 30
+10558	3	The quantity is under 30
+10559	12	The quantity is under 30
+10559	18	The quantity is under 30
+10560	20	The quantity is under 30
+10560	15	The quantity is under 30
+10561	10	The quantity is under 30
+10561	50	The quantity is greater than 30
+10562	20	The quantity is under 30
+10562	10	The quantity is under 30
+10563	25	The quantity is under 30
+10563	70	The quantity is greater than 30
+10564	16	The quantity is under 30
+10564	6	The quantity is under 30
+10564	25	The quantity is under 30
+10565	25	The quantity is under 30
+10565	18	The quantity is under 30
+10566	35	The quantity is greater than 30
+10566	18	The quantity is under 30
+10566	10	The quantity is under 30
+10567	60	The quantity is greater than 30
+10567	3	The quantity is under 30
+10567	40	The quantity is greater than 30
+10568	5	The quantity is under 30
+10569	35	The quantity is greater than 30
+10569	30	The quantity is 30
+10570	15	The quantity is under 30
+10570	60	The quantity is greater than 30
+10571	11	The quantity is under 30
+10571	28	The quantity is under 30
+10572	12	The quantity is under 30
+10572	10	The quantity is under 30
+10572	50	The quantity is greater than 30
+10572	15	The quantity is under 30
+10573	18	The quantity is under 30
+10573	40	The quantity is greater than 30
+10573	25	The quantity is under 30
+10574	14	The quantity is under 30
+10574	2	The quantity is under 30
+10574	10	The quantity is under 30
+10574	6	The quantity is under 30
+10575	12	The quantity is under 30
+10575	6	The quantity is under 30
+10575	30	The quantity is 30
+10575	10	The quantity is under 30
+10576	10	The quantity is under 30
+10576	20	The quantity is under 30
+10576	21	The quantity is under 30
+10577	10	The quantity is under 30
+10577	20	The quantity is under 30
+10577	18	The quantity is under 30
+10578	20	The quantity is under 30
+10578	6	The quantity is under 30
+10579	10	The quantity is under 30
+10579	21	The quantity is under 30
+10580	15	The quantity is under 30
+10580	9	The quantity is under 30
+10580	30	The quantity is 30
+10581	50	The quantity is greater than 30
+10582	4	The quantity is under 30
+10582	14	The quantity is under 30
+10583	10	The quantity is under 30
+10583	24	The quantity is under 30
+10583	10	The quantity is under 30
+10584	50	The quantity is greater than 30
+10585	15	The quantity is under 30
+10586	4	The quantity is under 30
+10587	6	The quantity is under 30
+10587	20	The quantity is under 30
+10587	20	The quantity is under 30
+10588	40	The quantity is greater than 30
+10588	100	The quantity is greater than 30
+10589	4	The quantity is under 30
+10590	20	The quantity is under 30
+10590	60	The quantity is greater than 30
+10591	14	The quantity is under 30
+10591	10	The quantity is under 30
+10591	50	The quantity is greater than 30
+10592	25	The quantity is under 30
+10592	5	The quantity is under 30
+10593	21	The quantity is under 30
+10593	20	The quantity is under 30
+10593	4	The quantity is under 30
+10594	24	The quantity is under 30
+10594	30	The quantity is 30
+10595	30	The quantity is 30
+10595	120	The quantity is greater than 30
+10595	65	The quantity is greater than 30
+10596	5	The quantity is under 30
+10596	24	The quantity is under 30
+10596	30	The quantity is 30
+10597	35	The quantity is greater than 30
+10597	20	The quantity is under 30
+10597	12	The quantity is under 30
+10598	50	The quantity is greater than 30
+10598	9	The quantity is under 30
+10599	10	The quantity is under 30
+10600	4	The quantity is under 30
+10600	30	The quantity is 30
+10601	60	The quantity is greater than 30
+10601	35	The quantity is greater than 30
+10602	5	The quantity is under 30
+10603	48	The quantity is greater than 30
+10603	25	The quantity is under 30
+10604	6	The quantity is under 30
+10604	10	The quantity is under 30
+10605	30	The quantity is 30
+10605	20	The quantity is under 30
+10605	70	The quantity is greater than 30
+10605	15	The quantity is under 30
+10606	20	The quantity is under 30
+10606	20	The quantity is under 30
+10606	10	The quantity is under 30
+10607	45	The quantity is greater than 30
+10607	100	The quantity is greater than 30
+10607	14	The quantity is under 30
+10607	42	The quantity is greater than 30
+10607	12	The quantity is under 30
+10608	28	The quantity is under 30
+10609	3	The quantity is under 30
+10609	10	The quantity is under 30
+10609	6	The quantity is under 30
+10610	21	The quantity is under 30
+10611	6	The quantity is under 30
+10611	10	The quantity is under 30
+10611	15	The quantity is under 30
+10612	70	The quantity is greater than 30
+10612	55	The quantity is greater than 30
+10612	18	The quantity is under 30
+10612	40	The quantity is greater than 30
+10612	80	The quantity is greater than 30
+10613	8	The quantity is under 30
+10613	40	The quantity is greater than 30
+10614	14	The quantity is under 30
+10614	8	The quantity is under 30
+10614	5	The quantity is under 30
+10615	5	The quantity is under 30
+10616	15	The quantity is under 30
+10616	14	The quantity is under 30
+10616	15	The quantity is under 30
+10616	15	The quantity is under 30
+10617	30	The quantity is 30
+10618	70	The quantity is greater than 30
+10618	20	The quantity is under 30
+10618	15	The quantity is under 30
+10619	42	The quantity is greater than 30
+10619	40	The quantity is greater than 30
+10620	5	The quantity is under 30
+10620	5	The quantity is under 30
+10621	5	The quantity is under 30
+10621	10	The quantity is under 30
+10621	20	The quantity is under 30
+10621	15	The quantity is under 30
+10622	20	The quantity is under 30
+10622	18	The quantity is under 30
+10623	21	The quantity is under 30
+10623	15	The quantity is under 30
+10623	25	The quantity is under 30
+10623	3	The quantity is under 30
+10623	30	The quantity is 30
+10624	10	The quantity is under 30
+10624	6	The quantity is under 30
+10624	10	The quantity is under 30
+10625	3	The quantity is under 30
+10625	5	The quantity is under 30
+10625	10	The quantity is under 30
+10626	12	The quantity is under 30
+10626	20	The quantity is under 30
+10626	20	The quantity is under 30
+10627	15	The quantity is under 30
+10627	35	The quantity is greater than 30
+10628	25	The quantity is under 30
+10629	20	The quantity is under 30
+10629	9	The quantity is under 30
+10630	12	The quantity is under 30
+10630	35	The quantity is greater than 30
+10631	8	The quantity is under 30
+10632	30	The quantity is 30
+10632	20	The quantity is under 30
+10633	36	The quantity is greater than 30
+10633	13	The quantity is under 30
+10633	35	The quantity is greater than 30
+10633	80	The quantity is greater than 30
+10634	35	The quantity is greater than 30
+10634	50	The quantity is greater than 30
+10634	15	The quantity is under 30
+10634	2	The quantity is under 30
+10635	10	The quantity is under 30
+10635	15	The quantity is under 30
+10635	40	The quantity is greater than 30
+10636	25	The quantity is under 30
+10636	6	The quantity is under 30
+10637	10	The quantity is under 30
+10637	25	The quantity is under 30
+10637	60	The quantity is greater than 30
+10638	20	The quantity is under 30
+10638	21	The quantity is under 30
+10638	60	The quantity is greater than 30
+10639	8	The quantity is under 30
+10640	20	The quantity is under 30
+10640	15	The quantity is under 30
+10641	50	The quantity is greater than 30
+10641	60	The quantity is greater than 30
+10642	30	The quantity is 30
+10642	20	The quantity is under 30
+10643	15	The quantity is under 30
+10643	21	The quantity is under 30
+10643	2	The quantity is under 30
+10644	4	The quantity is under 30
+10644	20	The quantity is under 30
+10644	21	The quantity is under 30
+10645	20	The quantity is under 30
+10645	15	The quantity is under 30
+10646	15	The quantity is under 30
+10646	18	The quantity is under 30
+10646	30	The quantity is 30
+10646	35	The quantity is greater than 30
+10647	30	The quantity is 30
+10647	20	The quantity is under 30
+10648	15	The quantity is under 30
+10648	15	The quantity is under 30
+10649	20	The quantity is under 30
+10649	15	The quantity is under 30
+10650	30	The quantity is 30
+10650	25	The quantity is under 30
+10650	30	The quantity is 30
+10651	12	The quantity is under 30
+10651	20	The quantity is under 30
+10652	2	The quantity is under 30
+10652	20	The quantity is under 30
+10653	30	The quantity is 30
+10653	20	The quantity is under 30
+10654	12	The quantity is under 30
+10654	20	The quantity is under 30
+10654	6	The quantity is under 30
+10655	20	The quantity is under 30
+10656	3	The quantity is under 30
+10656	28	The quantity is under 30
+10656	6	The quantity is under 30
+10657	50	The quantity is greater than 30
+10657	24	The quantity is under 30
+10657	45	The quantity is greater than 30
+10657	10	The quantity is under 30
+10657	45	The quantity is greater than 30
+10657	30	The quantity is 30
+10658	60	The quantity is greater than 30
+10658	70	The quantity is greater than 30
+10658	55	The quantity is greater than 30
+10658	70	The quantity is greater than 30
+10659	20	The quantity is under 30
+10659	24	The quantity is under 30
+10659	40	The quantity is greater than 30
+10660	21	The quantity is under 30
+10661	3	The quantity is under 30
+10661	49	The quantity is greater than 30
+10662	10	The quantity is under 30
+10663	30	The quantity is 30
+10663	30	The quantity is 30
+10663	20	The quantity is under 30
+10664	24	The quantity is under 30
+10664	12	The quantity is under 30
+10664	15	The quantity is under 30
+10665	20	The quantity is under 30
+10665	1	The quantity is under 30
+10665	10	The quantity is under 30
+10666	36	The quantity is greater than 30
+10666	10	The quantity is under 30
+10667	45	The quantity is greater than 30
+10667	14	The quantity is under 30
+10668	8	The quantity is under 30
+10668	4	The quantity is under 30
+10668	15	The quantity is under 30
+10669	30	The quantity is 30
+10670	32	The quantity is greater than 30
+10670	60	The quantity is greater than 30
+10670	25	The quantity is under 30
+10670	50	The quantity is greater than 30
+10670	25	The quantity is under 30
+10671	10	The quantity is under 30
+10671	10	The quantity is under 30
+10671	12	The quantity is under 30
+10672	15	The quantity is under 30
+10672	12	The quantity is under 30
+10673	3	The quantity is under 30
+10673	6	The quantity is under 30
+10673	6	The quantity is under 30
+10674	5	The quantity is under 30
+10675	30	The quantity is 30
+10675	10	The quantity is under 30
+10675	30	The quantity is 30
+10676	2	The quantity is under 30
+10676	7	The quantity is under 30
+10676	21	The quantity is under 30
+10677	30	The quantity is 30
+10677	8	The quantity is under 30
+10678	100	The quantity is greater than 30
+10678	30	The quantity is 30
+10678	120	The quantity is greater than 30
+10678	30	The quantity is 30
+10679	12	The quantity is under 30
+10680	50	The quantity is greater than 30
+10680	20	The quantity is under 30
+10680	40	The quantity is greater than 30
+10681	30	The quantity is 30
+10681	12	The quantity is under 30
+10681	28	The quantity is under 30
+10682	30	The quantity is 30
+10682	4	The quantity is under 30
+10682	30	The quantity is 30
+10683	9	The quantity is under 30
+10684	20	The quantity is under 30
+10684	40	The quantity is greater than 30
+10684	30	The quantity is 30
+10685	20	The quantity is under 30
+10685	4	The quantity is under 30
+10685	15	The quantity is under 30
+10686	30	The quantity is 30
+10686	15	The quantity is under 30
+10687	50	The quantity is greater than 30
+10687	10	The quantity is under 30
+10687	6	The quantity is under 30
+10688	18	The quantity is under 30
+10688	60	The quantity is greater than 30
+10688	14	The quantity is under 30
+10689	35	The quantity is greater than 30
+10690	20	The quantity is under 30
+10690	30	The quantity is 30
+10691	30	The quantity is 30
+10691	40	The quantity is greater than 30
+10691	40	The quantity is greater than 30
+10691	24	The quantity is under 30
+10691	48	The quantity is greater than 30
+10692	20	The quantity is under 30
+10693	6	The quantity is under 30
+10693	60	The quantity is greater than 30
+10693	30	The quantity is 30
+10693	15	The quantity is under 30
+10694	90	The quantity is greater than 30
+10694	25	The quantity is under 30
+10694	50	The quantity is greater than 30
+10695	10	The quantity is under 30
+10695	4	The quantity is under 30
+10695	20	The quantity is under 30
+10696	20	The quantity is under 30
+10696	18	The quantity is under 30
+10697	7	The quantity is under 30
+10697	9	The quantity is under 30
+10697	30	The quantity is 30
+10697	30	The quantity is 30
+10698	15	The quantity is under 30
+10698	8	The quantity is under 30
+10698	12	The quantity is under 30
+10698	65	The quantity is greater than 30
+10698	8	The quantity is under 30
+10699	12	The quantity is under 30
+10700	5	The quantity is under 30
+10700	12	The quantity is under 30
+10700	40	The quantity is greater than 30
+10700	60	The quantity is greater than 30
+10701	42	The quantity is greater than 30
+10701	20	The quantity is under 30
+10701	35	The quantity is greater than 30
+10702	6	The quantity is under 30
+10702	15	The quantity is under 30
+10703	5	The quantity is under 30
+10703	35	The quantity is greater than 30
+10703	35	The quantity is greater than 30
+10704	6	The quantity is under 30
+10704	35	The quantity is greater than 30
+10704	24	The quantity is under 30
+10705	20	The quantity is under 30
+10705	4	The quantity is under 30
+10706	20	The quantity is under 30
+10706	24	The quantity is under 30
+10706	8	The quantity is under 30
+10707	21	The quantity is under 30
+10707	40	The quantity is greater than 30
+10707	28	The quantity is under 30
+10708	4	The quantity is under 30
+10708	5	The quantity is under 30
+10709	40	The quantity is greater than 30
+10709	28	The quantity is under 30
+10709	10	The quantity is under 30
+10710	5	The quantity is under 30
+10710	5	The quantity is under 30
+10711	12	The quantity is under 30
+10711	42	The quantity is greater than 30
+10711	120	The quantity is greater than 30
+10712	3	The quantity is under 30
+10712	30	The quantity is 30
+10713	18	The quantity is under 30
+10713	30	The quantity is 30
+10713	110	The quantity is greater than 30
+10713	24	The quantity is under 30
+10714	30	The quantity is 30
+10714	27	The quantity is under 30
+10714	50	The quantity is greater than 30
+10714	18	The quantity is under 30
+10714	12	The quantity is under 30
+10715	21	The quantity is under 30
+10715	30	The quantity is 30
+10716	5	The quantity is under 30
+10716	7	The quantity is under 30
+10716	10	The quantity is under 30
+10717	32	The quantity is greater than 30
+10717	15	The quantity is under 30
+10717	25	The quantity is under 30
+10718	36	The quantity is greater than 30
+10718	20	The quantity is under 30
+10718	40	The quantity is greater than 30
+10718	20	The quantity is under 30
+10719	12	The quantity is under 30
+10719	3	The quantity is under 30
+10719	40	The quantity is greater than 30
+10720	21	The quantity is under 30
+10720	8	The quantity is under 30
+10721	50	The quantity is greater than 30
+10722	3	The quantity is under 30
+10722	50	The quantity is greater than 30
+10722	45	The quantity is greater than 30
+10722	42	The quantity is greater than 30
+10723	15	The quantity is under 30
+10724	16	The quantity is under 30
+10724	5	The quantity is under 30
+10725	12	The quantity is under 30
+10725	4	The quantity is under 30
+10725	6	The quantity is under 30
+10726	25	The quantity is under 30
+10726	5	The quantity is under 30
+10727	20	The quantity is under 30
+10727	10	The quantity is under 30
+10727	10	The quantity is under 30
+10728	15	The quantity is under 30
+10728	6	The quantity is under 30
+10728	12	The quantity is under 30
+10728	15	The quantity is under 30
+10729	50	The quantity is greater than 30
+10729	30	The quantity is 30
+10729	40	The quantity is greater than 30
+10730	15	The quantity is under 30
+10730	3	The quantity is under 30
+10730	10	The quantity is under 30
+10731	40	The quantity is greater than 30
+10731	30	The quantity is 30
+10732	20	The quantity is under 30
+10733	16	The quantity is under 30
+10733	20	The quantity is under 30
+10733	25	The quantity is under 30
+10734	30	The quantity is 30
+10734	15	The quantity is under 30
+10734	20	The quantity is under 30
+10735	20	The quantity is under 30
+10735	2	The quantity is under 30
+10736	40	The quantity is greater than 30
+10736	20	The quantity is under 30
+10737	4	The quantity is under 30
+10737	12	The quantity is under 30
+10738	3	The quantity is under 30
+10739	6	The quantity is under 30
+10739	18	The quantity is under 30
+10740	5	The quantity is under 30
+10740	35	The quantity is greater than 30
+10740	40	The quantity is greater than 30
+10740	14	The quantity is under 30
+10741	15	The quantity is under 30
+10742	20	The quantity is under 30
+10742	50	The quantity is greater than 30
+10742	35	The quantity is greater than 30
+10743	28	The quantity is under 30
+10744	50	The quantity is greater than 30
+10745	24	The quantity is under 30
+10745	16	The quantity is under 30
+10745	45	The quantity is greater than 30
+10745	7	The quantity is under 30
+10746	6	The quantity is under 30
+10746	28	The quantity is under 30
+10746	9	The quantity is under 30
+10746	40	The quantity is greater than 30
+10747	8	The quantity is under 30
+10747	35	The quantity is greater than 30
+10747	9	The quantity is under 30
+10747	30	The quantity is 30
+10748	44	The quantity is greater than 30
+10748	40	The quantity is greater than 30
+10748	28	The quantity is under 30
+10749	15	The quantity is under 30
+10749	6	The quantity is under 30
+10749	10	The quantity is under 30
+10750	5	The quantity is under 30
+10750	40	The quantity is greater than 30
+10750	25	The quantity is under 30
+10751	12	The quantity is under 30
+10751	30	The quantity is 30
+10751	20	The quantity is under 30
+10751	15	The quantity is under 30
+10752	8	The quantity is under 30
+10752	3	The quantity is under 30
+10753	4	The quantity is under 30
+10753	5	The quantity is under 30
+10754	3	The quantity is under 30
+10755	30	The quantity is 30
+10755	30	The quantity is 30
+10755	14	The quantity is under 30
+10755	25	The quantity is under 30
+10756	21	The quantity is under 30
+10756	20	The quantity is under 30
+10756	6	The quantity is under 30
+10756	20	The quantity is under 30
+10757	30	The quantity is 30
+10757	7	The quantity is under 30
+10757	30	The quantity is 30
+10757	24	The quantity is under 30
+10758	20	The quantity is under 30
+10758	60	The quantity is greater than 30
+10758	40	The quantity is greater than 30
+10759	10	The quantity is under 30
+10760	12	The quantity is under 30
+10760	40	The quantity is greater than 30
+10760	30	The quantity is 30
+10761	35	The quantity is greater than 30
+10761	18	The quantity is under 30
+10762	16	The quantity is under 30
+10762	30	The quantity is 30
+10762	28	The quantity is under 30
+10762	60	The quantity is greater than 30
+10763	40	The quantity is greater than 30
+10763	6	The quantity is under 30
+10763	20	The quantity is under 30
+10764	20	The quantity is under 30
+10764	130	The quantity is greater than 30
+10765	80	The quantity is greater than 30
+10766	40	The quantity is greater than 30
+10766	35	The quantity is greater than 30
+10766	40	The quantity is greater than 30
+10767	2	The quantity is under 30
+10768	4	The quantity is under 30
+10768	50	The quantity is greater than 30
+10768	15	The quantity is under 30
+10768	12	The quantity is under 30
+10769	30	The quantity is 30
+10769	15	The quantity is under 30
+10769	20	The quantity is under 30
+10769	15	The quantity is under 30
+10770	15	The quantity is under 30
+10771	16	The quantity is under 30
+10772	18	The quantity is under 30
+10772	25	The quantity is under 30
+10773	33	The quantity is greater than 30
+10773	70	The quantity is greater than 30
+10773	7	The quantity is under 30
+10774	2	The quantity is under 30
+10774	50	The quantity is greater than 30
+10775	6	The quantity is under 30
+10775	3	The quantity is under 30
+10776	16	The quantity is under 30
+10776	12	The quantity is under 30
+10776	27	The quantity is under 30
+10776	120	The quantity is greater than 30
+10777	20	The quantity is under 30
+10778	10	The quantity is under 30
+10779	20	The quantity is under 30
+10779	20	The quantity is under 30
+10780	35	The quantity is greater than 30
+10780	15	The quantity is under 30
+10781	3	The quantity is under 30
+10781	20	The quantity is under 30
+10781	35	The quantity is greater than 30
+10782	1	The quantity is under 30
+10783	10	The quantity is under 30
+10783	5	The quantity is under 30
+10784	30	The quantity is 30
+10784	2	The quantity is under 30
+10784	30	The quantity is 30
+10785	10	The quantity is under 30
+10785	10	The quantity is under 30
+10786	30	The quantity is 30
+10786	15	The quantity is under 30
+10786	42	The quantity is greater than 30
+10787	15	The quantity is under 30
+10787	20	The quantity is under 30
+10788	50	The quantity is greater than 30
+10788	40	The quantity is greater than 30
+10789	30	The quantity is 30
+10789	15	The quantity is under 30
+10789	30	The quantity is 30
+10789	18	The quantity is under 30
+10790	3	The quantity is under 30
+10790	20	The quantity is under 30
+10791	14	The quantity is under 30
+10791	20	The quantity is under 30
+10792	10	The quantity is under 30
+10792	3	The quantity is under 30
+10792	15	The quantity is under 30
+10793	14	The quantity is under 30
+10793	8	The quantity is under 30
+10794	15	The quantity is under 30
+10794	6	The quantity is under 30
+10795	65	The quantity is greater than 30
+10795	35	The quantity is greater than 30
+10796	21	The quantity is under 30
+10796	10	The quantity is under 30
+10796	35	The quantity is greater than 30
+10796	24	The quantity is under 30
+10797	20	The quantity is under 30
+10798	2	The quantity is under 30
+10798	10	The quantity is under 30
+10799	20	The quantity is under 30
+10799	20	The quantity is under 30
+10799	25	The quantity is under 30
+10800	50	The quantity is greater than 30
+10800	10	The quantity is under 30
+10800	7	The quantity is under 30
+10801	40	The quantity is greater than 30
+10801	20	The quantity is under 30
+10802	25	The quantity is under 30
+10802	30	The quantity is 30
+10802	60	The quantity is greater than 30
+10802	5	The quantity is under 30
+10803	24	The quantity is under 30
+10803	15	The quantity is under 30
+10803	15	The quantity is under 30
+10804	36	The quantity is greater than 30
+10804	24	The quantity is under 30
+10804	4	The quantity is under 30
+10805	10	The quantity is under 30
+10805	10	The quantity is under 30
+10806	20	The quantity is under 30
+10806	2	The quantity is under 30
+10806	15	The quantity is under 30
+10807	1	The quantity is under 30
+10808	20	The quantity is under 30
+10808	50	The quantity is greater than 30
+10809	20	The quantity is under 30
+10810	7	The quantity is under 30
+10810	5	The quantity is under 30
+10810	5	The quantity is under 30
+10811	15	The quantity is under 30
+10811	18	The quantity is under 30
+10811	30	The quantity is 30
+10812	16	The quantity is under 30
+10812	40	The quantity is greater than 30
+10812	20	The quantity is under 30
+10813	12	The quantity is under 30
+10813	35	The quantity is greater than 30
+10814	20	The quantity is under 30
+10814	20	The quantity is under 30
+10814	8	The quantity is under 30
+10814	30	The quantity is 30
+10815	16	The quantity is under 30
+10816	30	The quantity is 30
+10816	20	The quantity is under 30
+10817	40	The quantity is greater than 30
+10817	30	The quantity is 30
+10817	60	The quantity is greater than 30
+10817	25	The quantity is under 30
+10818	20	The quantity is under 30
+10818	20	The quantity is under 30
+10819	7	The quantity is under 30
+10819	20	The quantity is under 30
+10820	30	The quantity is 30
+10821	20	The quantity is under 30
+10821	6	The quantity is under 30
+10822	3	The quantity is under 30
+10822	6	The quantity is under 30
+10823	20	The quantity is under 30
+10823	15	The quantity is under 30
+10823	40	The quantity is greater than 30
+10823	15	The quantity is under 30
+10824	12	The quantity is under 30
+10824	9	The quantity is under 30
+10825	12	The quantity is under 30
+10825	20	The quantity is under 30
+10826	35	The quantity is greater than 30
+10826	15	The quantity is under 30
+10827	15	The quantity is under 30
+10827	21	The quantity is under 30
+10828	5	The quantity is under 30
+10828	2	The quantity is under 30
+10829	10	The quantity is under 30
+10829	20	The quantity is under 30
+10829	10	The quantity is under 30
+10829	21	The quantity is under 30
+10830	6	The quantity is under 30
+10830	28	The quantity is under 30
+10830	30	The quantity is 30
+10830	24	The quantity is under 30
+10831	2	The quantity is under 30
+10831	8	The quantity is under 30
+10831	8	The quantity is under 30
+10831	9	The quantity is under 30
+10832	3	The quantity is under 30
+10832	10	The quantity is under 30
+10832	16	The quantity is under 30
+10832	3	The quantity is under 30
+10833	20	The quantity is under 30
+10833	9	The quantity is under 30
+10833	9	The quantity is under 30
+10834	8	The quantity is under 30
+10834	20	The quantity is under 30
+10835	15	The quantity is under 30
+10835	2	The quantity is under 30
+10836	52	The quantity is greater than 30
+10836	6	The quantity is under 30
+10836	24	The quantity is under 30
+10836	60	The quantity is greater than 30
+10836	30	The quantity is 30
+10837	6	The quantity is under 30
+10837	25	The quantity is under 30
+10837	40	The quantity is greater than 30
+10837	21	The quantity is under 30
+10838	4	The quantity is under 30
+10838	25	The quantity is under 30
+10838	50	The quantity is greater than 30
+10839	30	The quantity is 30
+10839	15	The quantity is under 30
+10840	6	The quantity is under 30
+10840	10	The quantity is under 30
+10841	16	The quantity is under 30
+10841	30	The quantity is 30
+10841	50	The quantity is greater than 30
+10841	15	The quantity is under 30
+10842	15	The quantity is under 30
+10842	5	The quantity is under 30
+10842	20	The quantity is under 30
+10842	12	The quantity is under 30
+10843	4	The quantity is under 30
+10844	35	The quantity is greater than 30
+10845	70	The quantity is greater than 30
+10845	25	The quantity is under 30
+10845	42	The quantity is greater than 30
+10845	60	The quantity is greater than 30
+10845	48	The quantity is greater than 30
+10846	21	The quantity is under 30
+10846	30	The quantity is 30
+10846	20	The quantity is under 30
+10847	80	The quantity is greater than 30
+10847	12	The quantity is under 30
+10847	60	The quantity is greater than 30
+10847	36	The quantity is greater than 30
+10847	45	The quantity is greater than 30
+10847	55	The quantity is greater than 30
+10848	30	The quantity is 30
+10848	3	The quantity is under 30
+10849	49	The quantity is greater than 30
+10849	18	The quantity is under 30
+10850	20	The quantity is under 30
+10850	4	The quantity is under 30
+10850	30	The quantity is 30
+10851	5	The quantity is under 30
+10851	10	The quantity is under 30
+10851	10	The quantity is under 30
+10851	42	The quantity is greater than 30
+10852	15	The quantity is under 30
+10852	6	The quantity is under 30
+10852	50	The quantity is greater than 30
+10853	10	The quantity is under 30
+10854	100	The quantity is greater than 30
+10854	65	The quantity is greater than 30
+10855	50	The quantity is greater than 30
+10855	14	The quantity is under 30
+10855	24	The quantity is under 30
+10855	15	The quantity is under 30
+10856	20	The quantity is under 30
+10856	20	The quantity is under 30
+10857	30	The quantity is 30
+10857	35	The quantity is greater than 30
+10857	10	The quantity is under 30
+10858	5	The quantity is under 30
+10858	10	The quantity is under 30
+10858	4	The quantity is under 30
+10859	40	The quantity is greater than 30
+10859	35	The quantity is greater than 30
+10859	30	The quantity is 30
+10860	3	The quantity is under 30
+10860	20	The quantity is under 30
+10861	42	The quantity is greater than 30
+10861	20	The quantity is under 30
+10861	40	The quantity is greater than 30
+10861	35	The quantity is greater than 30
+10861	3	The quantity is under 30
+10862	25	The quantity is under 30
+10862	8	The quantity is under 30
+10863	20	The quantity is under 30
+10863	12	The quantity is under 30
+10864	4	The quantity is under 30
+10864	15	The quantity is under 30
+10865	60	The quantity is greater than 30
+10865	80	The quantity is greater than 30
+10866	21	The quantity is under 30
+10866	6	The quantity is under 30
+10866	40	The quantity is greater than 30
+10867	3	The quantity is under 30
+10868	20	The quantity is under 30
+10868	30	The quantity is 30
+10868	42	The quantity is greater than 30
+10869	40	The quantity is greater than 30
+10869	10	The quantity is under 30
+10869	50	The quantity is greater than 30
+10869	20	The quantity is under 30
+10870	3	The quantity is under 30
+10870	2	The quantity is under 30
+10871	50	The quantity is greater than 30
+10871	12	The quantity is under 30
+10871	16	The quantity is under 30
+10872	10	The quantity is under 30
+10872	20	The quantity is under 30
+10872	15	The quantity is under 30
+10872	21	The quantity is under 30
+10873	20	The quantity is under 30
+10873	3	The quantity is under 30
+10874	10	The quantity is under 30
+10875	25	The quantity is under 30
+10875	21	The quantity is under 30
+10875	15	The quantity is under 30
+10876	21	The quantity is under 30
+10876	20	The quantity is under 30
+10877	30	The quantity is 30
+10877	25	The quantity is under 30
+10878	20	The quantity is under 30
+10879	12	The quantity is under 30
+10879	10	The quantity is under 30
+10879	10	The quantity is under 30
+10880	30	The quantity is 30
+10880	30	The quantity is 30
+10880	50	The quantity is greater than 30
+10881	10	The quantity is under 30
+10882	25	The quantity is under 30
+10882	20	The quantity is under 30
+10882	32	The quantity is greater than 30
+10883	8	The quantity is under 30
+10884	40	The quantity is greater than 30
+10884	21	The quantity is under 30
+10884	12	The quantity is under 30
+10885	20	The quantity is under 30
+10885	12	The quantity is under 30
+10885	30	The quantity is 30
+10885	25	The quantity is under 30
+10886	70	The quantity is greater than 30
+10886	35	The quantity is greater than 30
+10886	40	The quantity is greater than 30
+10887	5	The quantity is under 30
+10888	20	The quantity is under 30
+10888	18	The quantity is under 30
+10889	40	The quantity is greater than 30
+10889	40	The quantity is greater than 30
+10890	15	The quantity is under 30
+10890	10	The quantity is under 30
+10890	14	The quantity is under 30
+10891	15	The quantity is under 30
+10892	40	The quantity is greater than 30
+10893	30	The quantity is 30
+10893	10	The quantity is under 30
+10893	24	The quantity is under 30
+10893	35	The quantity is greater than 30
+10893	20	The quantity is under 30
+10894	28	The quantity is under 30
+10894	50	The quantity is greater than 30
+10894	120	The quantity is greater than 30
+10895	110	The quantity is greater than 30
+10895	45	The quantity is greater than 30
+10895	91	The quantity is greater than 30
+10895	100	The quantity is greater than 30
+10896	15	The quantity is under 30
+10896	16	The quantity is under 30
+10897	80	The quantity is greater than 30
+10897	36	The quantity is greater than 30
+10898	5	The quantity is under 30
+10899	8	The quantity is under 30
+10900	3	The quantity is under 30
+10901	30	The quantity is 30
+10901	30	The quantity is 30
+10902	30	The quantity is 30
+10902	6	The quantity is under 30
+10903	40	The quantity is greater than 30
+10903	21	The quantity is under 30
+10903	20	The quantity is under 30
+10904	15	The quantity is under 30
+10904	35	The quantity is greater than 30
+10905	20	The quantity is under 30
+10906	15	The quantity is under 30
+10907	14	The quantity is under 30
+10908	20	The quantity is under 30
+10908	14	The quantity is under 30
+10909	12	The quantity is under 30
+10909	15	The quantity is under 30
+10909	5	The quantity is under 30
+10910	12	The quantity is under 30
+10910	10	The quantity is under 30
+10910	5	The quantity is under 30
+10911	10	The quantity is under 30
+10911	12	The quantity is under 30
+10911	15	The quantity is under 30
+10912	40	The quantity is greater than 30
+10912	60	The quantity is greater than 30
+10913	30	The quantity is 30
+10913	40	The quantity is greater than 30
+10913	15	The quantity is under 30
+10914	25	The quantity is under 30
+10915	10	The quantity is under 30
+10915	30	The quantity is 30
+10915	10	The quantity is under 30
+10916	6	The quantity is under 30
+10916	6	The quantity is under 30
+10916	20	The quantity is under 30
+10917	1	The quantity is under 30
+10917	10	The quantity is under 30
+10918	60	The quantity is greater than 30
+10918	25	The quantity is under 30
+10919	24	The quantity is under 30
+10919	24	The quantity is under 30
+10919	20	The quantity is under 30
+10920	24	The quantity is under 30
+10921	10	The quantity is under 30
+10921	40	The quantity is greater than 30
+10922	15	The quantity is under 30
+10922	35	The quantity is greater than 30
+10923	10	The quantity is under 30
+10923	10	The quantity is under 30
+10923	24	The quantity is under 30
+10924	20	The quantity is under 30
+10924	30	The quantity is 30
+10924	6	The quantity is under 30
+10925	25	The quantity is under 30
+10925	12	The quantity is under 30
+10926	2	The quantity is under 30
+10926	10	The quantity is under 30
+10926	7	The quantity is under 30
+10926	10	The quantity is under 30
+10927	5	The quantity is under 30
+10927	5	The quantity is under 30
+10927	20	The quantity is under 30
+10928	5	The quantity is under 30
+10928	5	The quantity is under 30
+10929	60	The quantity is greater than 30
+10929	49	The quantity is greater than 30
+10929	15	The quantity is under 30
+10930	36	The quantity is greater than 30
+10930	25	The quantity is under 30
+10930	25	The quantity is under 30
+10930	30	The quantity is 30
+10931	42	The quantity is greater than 30
+10931	30	The quantity is 30
+10932	30	The quantity is 30
+10932	14	The quantity is under 30
+10932	16	The quantity is under 30
+10932	20	The quantity is under 30
+10933	2	The quantity is under 30
+10933	30	The quantity is 30
+10934	20	The quantity is under 30
+10935	21	The quantity is under 30
+10935	4	The quantity is under 30
+10935	8	The quantity is under 30
+10936	30	The quantity is 30
+10937	8	The quantity is under 30
+10937	20	The quantity is under 30
+10938	20	The quantity is under 30
+10938	24	The quantity is under 30
+10938	49	The quantity is greater than 30
+10938	35	The quantity is greater than 30
+10939	10	The quantity is under 30
+10939	40	The quantity is greater than 30
+10940	8	The quantity is under 30
+10940	20	The quantity is under 30
+10941	44	The quantity is greater than 30
+10941	30	The quantity is 30
+10941	80	The quantity is greater than 30
+10941	50	The quantity is greater than 30
+10942	28	The quantity is under 30
+10943	15	The quantity is under 30
+10943	21	The quantity is under 30
+10943	15	The quantity is under 30
+10944	5	The quantity is under 30
+10944	18	The quantity is under 30
+10944	18	The quantity is under 30
+10945	20	The quantity is under 30
+10945	10	The quantity is under 30
+10946	25	The quantity is under 30
+10946	25	The quantity is under 30
+10946	40	The quantity is greater than 30
+10947	4	The quantity is under 30
+10948	9	The quantity is under 30
+10948	40	The quantity is greater than 30
+10948	4	The quantity is under 30
+10949	12	The quantity is under 30
+10949	30	The quantity is 30
+10949	6	The quantity is under 30
+10949	60	The quantity is greater than 30
+10950	5	The quantity is under 30
+10951	15	The quantity is under 30
+10951	6	The quantity is under 30
+10951	50	The quantity is greater than 30
+10952	16	The quantity is under 30
+10952	2	The quantity is under 30
+10953	50	The quantity is greater than 30
+10953	50	The quantity is greater than 30
+10954	28	The quantity is under 30
+10954	25	The quantity is under 30
+10954	30	The quantity is 30
+10954	24	The quantity is under 30
+10955	12	The quantity is under 30
+10956	12	The quantity is under 30
+10956	14	The quantity is under 30
+10956	8	The quantity is under 30
+10957	30	The quantity is 30
+10957	40	The quantity is greater than 30
+10957	8	The quantity is under 30
+10958	20	The quantity is under 30
+10958	6	The quantity is under 30
+10958	5	The quantity is under 30
+10959	20	The quantity is under 30
+10960	10	The quantity is under 30
+10960	24	The quantity is under 30
+10961	6	The quantity is under 30
+10961	60	The quantity is greater than 30
+10962	45	The quantity is greater than 30
+10962	77	The quantity is greater than 30
+10962	20	The quantity is under 30
+10962	9	The quantity is under 30
+10962	44	The quantity is greater than 30
+10963	2	The quantity is under 30
+10964	6	The quantity is under 30
+10964	5	The quantity is under 30
+10964	10	The quantity is under 30
+10965	16	The quantity is under 30
+10966	8	The quantity is under 30
+10966	12	The quantity is under 30
+10966	12	The quantity is under 30
+10967	12	The quantity is under 30
+10967	40	The quantity is greater than 30
+10968	30	The quantity is 30
+10968	30	The quantity is 30
+10968	4	The quantity is under 30
+10969	9	The quantity is under 30
+10970	40	The quantity is greater than 30
+10971	14	The quantity is under 30
+10972	6	The quantity is under 30
+10972	7	The quantity is under 30
+10973	5	The quantity is under 30
+10973	6	The quantity is under 30
+10973	10	The quantity is under 30
+10974	10	The quantity is under 30
+10975	16	The quantity is under 30
+10975	10	The quantity is under 30
+10976	20	The quantity is under 30
+10977	30	The quantity is 30
+10977	30	The quantity is 30
+10977	10	The quantity is under 30
+10977	20	The quantity is under 30
+10978	20	The quantity is under 30
+10978	40	The quantity is greater than 30
+10978	10	The quantity is under 30
+10978	6	The quantity is under 30
+10979	18	The quantity is under 30
+10979	20	The quantity is under 30
+10979	80	The quantity is greater than 30
+10979	30	The quantity is 30
+10979	24	The quantity is under 30
+10979	35	The quantity is greater than 30
+10980	40	The quantity is greater than 30
+10981	60	The quantity is greater than 30
+10982	20	The quantity is under 30
+10982	9	The quantity is under 30
+10983	84	The quantity is greater than 30
+10983	15	The quantity is under 30
+10984	55	The quantity is greater than 30
+10984	20	The quantity is under 30
+10984	40	The quantity is greater than 30
+10985	36	The quantity is greater than 30
+10985	8	The quantity is under 30
+10985	35	The quantity is greater than 30
+10986	30	The quantity is 30
+10986	15	The quantity is under 30
+10986	10	The quantity is under 30
+10986	15	The quantity is under 30
+10987	60	The quantity is greater than 30
+10987	6	The quantity is under 30
+10987	20	The quantity is under 30
+10988	60	The quantity is greater than 30
+10988	40	The quantity is greater than 30
+10989	40	The quantity is greater than 30
+10989	15	The quantity is under 30
+10989	4	The quantity is under 30
+10990	65	The quantity is greater than 30
+10990	60	The quantity is greater than 30
+10990	65	The quantity is greater than 30
+10990	66	The quantity is greater than 30
+10991	50	The quantity is greater than 30
+10991	20	The quantity is under 30
+10991	90	The quantity is greater than 30
+10992	2	The quantity is under 30
+10993	50	The quantity is greater than 30
+10993	35	The quantity is greater than 30
+10994	18	The quantity is under 30
+10995	20	The quantity is under 30
+10995	4	The quantity is under 30
+10996	40	The quantity is greater than 30
+10997	50	The quantity is greater than 30
+10997	20	The quantity is under 30
+10997	20	The quantity is under 30
+10998	12	The quantity is under 30
+10998	7	The quantity is under 30
+10998	20	The quantity is under 30
+10998	30	The quantity is 30
+10999	20	The quantity is under 30
+10999	15	The quantity is under 30
+10999	21	The quantity is under 30
+11000	25	The quantity is under 30
+11000	30	The quantity is 30
+11000	30	The quantity is 30
+11001	60	The quantity is greater than 30
+11001	25	The quantity is under 30
+11001	25	The quantity is under 30
+11001	6	The quantity is under 30
+11002	56	The quantity is greater than 30
+11002	15	The quantity is under 30
+11002	24	The quantity is under 30
+11002	40	The quantity is greater than 30
+11003	4	The quantity is under 30
+11003	10	The quantity is under 30
+11003	10	The quantity is under 30
+11004	6	The quantity is under 30
+11004	6	The quantity is under 30
+11005	2	The quantity is under 30
+11005	10	The quantity is under 30
+11006	8	The quantity is under 30
+11006	2	The quantity is under 30
+11007	30	The quantity is 30
+11007	10	The quantity is under 30
+11007	14	The quantity is under 30
+11008	70	The quantity is greater than 30
+11008	90	The quantity is greater than 30
+11008	21	The quantity is under 30
+11009	12	The quantity is under 30
+11009	18	The quantity is under 30
+11009	9	The quantity is under 30
+11010	20	The quantity is under 30
+11010	10	The quantity is under 30
+11011	40	The quantity is greater than 30
+11011	20	The quantity is under 30
+11012	50	The quantity is greater than 30
+11012	36	The quantity is greater than 30
+11012	60	The quantity is greater than 30
+11013	10	The quantity is under 30
+11013	4	The quantity is under 30
+11013	20	The quantity is under 30
+11013	2	The quantity is under 30
+11014	28	The quantity is under 30
+11015	15	The quantity is under 30
+11015	18	The quantity is under 30
+11016	15	The quantity is under 30
+11016	16	The quantity is under 30
+11017	25	The quantity is under 30
+11017	110	The quantity is greater than 30
+11017	30	The quantity is 30
+11018	20	The quantity is under 30
+11018	10	The quantity is under 30
+11018	5	The quantity is under 30
+11019	3	The quantity is under 30
+11019	2	The quantity is under 30
+11020	24	The quantity is under 30
+11021	11	The quantity is under 30
+11021	15	The quantity is under 30
+11021	63	The quantity is greater than 30
+11021	44	The quantity is greater than 30
+11021	35	The quantity is greater than 30
+11022	35	The quantity is greater than 30
+11022	30	The quantity is 30
+11023	4	The quantity is under 30
+11023	30	The quantity is 30
+11024	12	The quantity is under 30
+11024	30	The quantity is 30
+11024	21	The quantity is under 30
+11024	50	The quantity is greater than 30
+11025	10	The quantity is under 30
+11025	20	The quantity is under 30
+11026	8	The quantity is under 30
+11026	10	The quantity is under 30
+11027	30	The quantity is 30
+11027	21	The quantity is under 30
+11028	35	The quantity is greater than 30
+11028	24	The quantity is under 30
+11029	20	The quantity is under 30
+11029	12	The quantity is under 30
+11030	100	The quantity is greater than 30
+11030	70	The quantity is greater than 30
+11030	60	The quantity is greater than 30
+11030	100	The quantity is greater than 30
+11031	45	The quantity is greater than 30
+11031	80	The quantity is greater than 30
+11031	21	The quantity is under 30
+11031	20	The quantity is under 30
+11031	16	The quantity is under 30
+11032	35	The quantity is greater than 30
+11032	25	The quantity is under 30
+11032	30	The quantity is 30
+11033	70	The quantity is greater than 30
+11033	36	The quantity is greater than 30
+11034	15	The quantity is under 30
+11034	12	The quantity is under 30
+11034	6	The quantity is under 30
+11035	10	The quantity is under 30
+11035	60	The quantity is greater than 30
+11035	30	The quantity is 30
+11035	10	The quantity is under 30
+11036	7	The quantity is under 30
+11036	30	The quantity is 30
+11037	4	The quantity is under 30
+11038	5	The quantity is under 30
+11038	2	The quantity is under 30
+11038	30	The quantity is 30
+11039	20	The quantity is under 30
+11039	24	The quantity is under 30
+11039	60	The quantity is greater than 30
+11039	28	The quantity is under 30
+11040	20	The quantity is under 30
+11041	30	The quantity is 30
+11041	30	The quantity is 30
+11042	15	The quantity is under 30
+11042	4	The quantity is under 30
+11043	10	The quantity is under 30
+11044	12	The quantity is under 30
+11045	15	The quantity is under 30
+11045	24	The quantity is under 30
+11046	20	The quantity is under 30
+11046	15	The quantity is under 30
+11046	18	The quantity is under 30
+11047	25	The quantity is under 30
+11047	30	The quantity is 30
+11048	42	The quantity is greater than 30
+11049	10	The quantity is under 30
+11049	4	The quantity is under 30
+11050	50	The quantity is greater than 30
+11051	10	The quantity is under 30
+11052	30	The quantity is 30
+11052	10	The quantity is under 30
+11053	35	The quantity is greater than 30
+11053	20	The quantity is under 30
+11053	25	The quantity is under 30
+11054	10	The quantity is under 30
+11054	20	The quantity is under 30
+11055	15	The quantity is under 30
+11055	15	The quantity is under 30
+11055	20	The quantity is under 30
+11055	20	The quantity is under 30
+11056	40	The quantity is greater than 30
+11056	35	The quantity is greater than 30
+11056	50	The quantity is greater than 30
+11057	3	The quantity is under 30
+11058	3	The quantity is under 30
+11058	21	The quantity is under 30
+11058	4	The quantity is under 30
+11059	30	The quantity is 30
+11059	12	The quantity is under 30
+11059	35	The quantity is greater than 30
+11060	4	The quantity is under 30
+11060	10	The quantity is under 30
+11061	15	The quantity is under 30
+11062	10	The quantity is under 30
+11062	12	The quantity is under 30
+11063	30	The quantity is 30
+11063	40	The quantity is greater than 30
+11063	30	The quantity is 30
+11064	77	The quantity is greater than 30
+11064	12	The quantity is under 30
+11064	25	The quantity is under 30
+11064	4	The quantity is under 30
+11064	55	The quantity is greater than 30
+11065	4	The quantity is under 30
+11065	20	The quantity is under 30
+11066	3	The quantity is under 30
+11066	42	The quantity is greater than 30
+11066	35	The quantity is greater than 30
+11067	9	The quantity is under 30
+11068	8	The quantity is under 30
+11068	36	The quantity is greater than 30
+11068	28	The quantity is under 30
+11069	20	The quantity is under 30
+11070	40	The quantity is greater than 30
+11070	20	The quantity is under 30
+11070	30	The quantity is 30
+11070	20	The quantity is under 30
+11071	15	The quantity is under 30
+11071	10	The quantity is under 30
+11072	8	The quantity is under 30
+11072	40	The quantity is greater than 30
+11072	22	The quantity is under 30
+11072	130	The quantity is greater than 30
+11073	10	The quantity is under 30
+11073	20	The quantity is under 30
+11074	14	The quantity is under 30
+11075	10	The quantity is under 30
+11075	30	The quantity is 30
+11075	2	The quantity is under 30
+11076	20	The quantity is under 30
+11076	20	The quantity is under 30
+11076	10	The quantity is under 30
+11077	24	The quantity is under 30
+11077	4	The quantity is under 30
+11077	1	The quantity is under 30
+11077	1	The quantity is under 30
+11077	1	The quantity is under 30
+11077	2	The quantity is under 30
+11077	1	The quantity is under 30
+11077	2	The quantity is under 30
+11077	4	The quantity is under 30
+11077	1	The quantity is under 30
+11077	2	The quantity is under 30
+11077	1	The quantity is under 30
+11077	2	The quantity is under 30
+11077	1	The quantity is under 30
+11077	2	The quantity is under 30
+11077	3	The quantity is under 30
+11077	3	The quantity is under 30
+11077	2	The quantity is under 30
+11077	2	The quantity is under 30
+11077	2	The quantity is under 30
+11077	2	The quantity is under 30
+11077	1	The quantity is under 30
+11077	2	The quantity is under 30
+11077	4	The quantity is under 30
+11077	2	The quantity is under 30
+
+SELECT CustomerName, City, Country
+FROM Customers
+ORDER BY
+(CASE
+    WHEN City IS NULL THEN Country
+    ELSE City
+END);
+
+CustomerName	City	Country
+Drachenblut Delikatessend	Aachen	Germany
+Rattlesnake Canyon Grocery	Albuquerque	USA
+Old World Delicatessen	Anchorage	USA
+Vaffeljernet	Århus	Denmark
+Galería del gastrónomo	Barcelona	Spain
+LILA-Supermercado	Barquisimeto	Venezuela
+Magazzini Alimentari Riuniti	Bergamo	Italy
+Alfreds Futterkiste	Berlin	Germany
+Chop-suey Chinese	Bern	Switzerland
+Save-a-lot Markets	Boise	USA
+Folk och fä HB	Bräcke	Sweden
+Königlich Essen	Brandenburg	Germany
+Maison Dewey	Bruxelles	Belgium
+Cactus Comidas para llevar	Buenos Aires	Argentina
+Océano Atlántico Ltda.	Buenos Aires	Argentina
+Rancho grande	Buenos Aires	Argentina
+The Cracker Box	Butte	USA
+Gourmet Lanchonetes	Campinas	Brazil
+GROSELLA-Restaurante	Caracas	Venezuela
+Suprêmes délices	Charleroi	Belgium
+Hungry Owl All-Night Grocers	Cork	Ireland
+Island Trading	Cowes	UK
+QUICK-Stop	Cunewalde	Germany
+Hungry Coyote Import Store	Elgin	USA
+Great Lakes Food Market	Eugene	USA
+Lehmanns Marktstand	Frankfurt a.M.	Germany
+Richter Supermarkt	Genève	Switzerland
+Ernst Handel	Graz	Austria
+Wilman Kala	Helsinki	Finland
+LINO-Delicateses	I. de Margarita	Venezuela
+Trail's Head Gourmet Provisioners	Kirkland	USA
+Ottilies Käseladen	Köln	Germany
+Simons bistro	København	Denmark
+Split Rail Beer & Ale	Lander	USA
+Morgenstern Gesundkost	Leipzig	Germany
+Folies gourmandes	Lille	France
+Furia Bacalhau e Frutos do Mar	Lisboa	Portugal
+Princesa Isabel Vinhoss	Lisboa	Portugal
+Around the Horn	London	UK
+B's Beverages	London	UK
+Consolidated Holdings	London	UK
+Eastern Connection	London	UK
+North/South	London	UK
+Seven Seas Imports	London	UK
+Berglunds snabbköp	Luleå	Sweden
+Victuailles en stock	Lyon	France
+Bólido Comidas preparadas	Madrid	Spain
+FISSA Fabrica Inter. Salchichas S.A.	Madrid	Spain
+Romero y tomillo	Madrid	Spain
+Blauer See Delikatessen	Mannheim	Germany
+Bon app'	Marseille	France
+Ana Trujillo Emparedados y helados	México D.F.	Mexico
+Antonio Moreno Taquería	México D.F.	Mexico
+Centro comercial Moctezuma	México D.F.	Mexico
+Pericles Comidas clásicas	México D.F.	Mexico
+Tortuga Restaurante	México D.F.	Mexico
+Mère Paillarde	Montréal	Canada
+Frankenversand	München	Germany
+Toms Spezialitäten	Münster	Germany
+Du monde entier	Nantes	France
+France restauration	Nantes	France
+Wartian Herkku	Oulu	Finland
+Paris spécialités	Paris	France
+Spécialités du monde	Paris	France
+Lonesome Pine Restaurant	Portland	USA
+The Big Cheese	Portland	USA
+Reggiani Caseifici	Reggio Emilia	Italy
+Vins et alcools Chevalier	Reims	France
+Wellington Importadora	Resende	Brazil
+Hanari Carnes	Rio de Janeiro	Brazil
+Que Delícia	Rio de Janeiro	Brazil
+Ricardo Adocicados	Rio de Janeiro	Brazil
+Piccolo und mehr	Salzburg	Austria
+HILARIÓN-Abastos	San Cristóbal	Venezuela
+Let's Stop N Shop	San Francisco	USA
+Comércio Mineiro	São Paulo	Brazil
+Familia Arquibaldo	São Paulo	Brazil
+Queen Cozinha	São Paulo	Brazil
+Tradição Hipermercados	São Paulo	Brazil
+White Clover Markets	Seattle	USA
+Godos Cocina Típica	Sevilla	Spain
+Santé Gourmet	Stavern	Norway
+Blondel père et fils	Strasbourg	France
+Die Wandernde Kuh	Stuttgart	Germany
+Franchi S.p.A.	Torino	Italy
+La maison d'Asie	Toulouse	France
+Bottom-Dollar Marketse	Tsawassen	Canada
+Laughing Bacchus Wine Cellars	Vancouver	Canada
+La corne d'abondance	Versailles	France
+Wolski	Walla	Poland
+Lazy K Kountry Store	Walla Walla	USA
