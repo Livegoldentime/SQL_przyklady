@@ -1,0 +1,1121 @@
+SELECT CustomerName,City FROM Customers;
+
+CustomerName	City
+Alfreds Futterkiste	Berlin
+Ana Trujillo Emparedados y helados	México D.F.
+Antonio Moreno Taquería	México D.F.
+Around the Horn	London
+Berglunds snabbköp	Luleå
+Blauer See Delikatessen	Mannheim
+Blondel père et fils	Strasbourg
+Bólido Comidas preparadas	Madrid
+Bon app'	Marseille
+Bottom-Dollar Marketse	Tsawassen
+B's Beverages	London
+Cactus Comidas para llevar	Buenos Aires
+Centro comercial Moctezuma	México D.F.
+Chop-suey Chinese	Bern
+Comércio Mineiro	São Paulo
+Consolidated Holdings	London
+Drachenblut Delikatessend	Aachen
+Du monde entier	Nantes
+Eastern Connection	London
+Ernst Handel	Graz
+Familia Arquibaldo	São Paulo
+FISSA Fabrica Inter. Salchichas S.A.	Madrid
+Folies gourmandes	Lille
+Folk och fä HB	Bräcke
+Frankenversand	München
+France restauration	Nantes
+Franchi S.p.A.	Torino
+Furia Bacalhau e Frutos do Mar	Lisboa
+Galería del gastrónomo	Barcelona
+Godos Cocina Típica	Sevilla
+Gourmet Lanchonetes	Campinas
+Great Lakes Food Market	Eugene
+GROSELLA-Restaurante	Caracas
+Hanari Carnes	Rio de Janeiro
+HILARIÓN-Abastos	San Cristóbal
+Hungry Coyote Import Store	Elgin
+Hungry Owl All-Night Grocers	Cork
+Island Trading	Cowes
+Königlich Essen	Brandenburg
+La corne d'abondance	Versailles
+La maison d'Asie	Toulouse
+Laughing Bacchus Wine Cellars	Vancouver
+Lazy K Kountry Store	Walla Walla
+Lehmanns Marktstand	Frankfurt a.M.
+Let's Stop N Shop	San Francisco
+LILA-Supermercado	Barquisimeto
+LINO-Delicateses	I. de Margarita
+Lonesome Pine Restaurant	Portland
+Magazzini Alimentari Riuniti	Bergamo
+Maison Dewey	Bruxelles
+Mère Paillarde	Montréal
+Morgenstern Gesundkost	Leipzig
+North/South	London
+Océano Atlántico Ltda.	Buenos Aires
+Old World Delicatessen	Anchorage
+Ottilies Käseladen	Köln
+Paris spécialités	Paris
+Pericles Comidas clásicas	México D.F.
+Piccolo und mehr	Salzburg
+Princesa Isabel Vinhoss	Lisboa
+Que Delícia	Rio de Janeiro
+Queen Cozinha	São Paulo
+QUICK-Stop	Cunewalde
+Rancho grande	Buenos Aires
+Rattlesnake Canyon Grocery	Albuquerque
+Reggiani Caseifici	Reggio Emilia
+Ricardo Adocicados	Rio de Janeiro
+Richter Supermarkt	Genève
+Romero y tomillo	Madrid
+Santé Gourmet	Stavern
+Save-a-lot Markets	Boise
+Seven Seas Imports	London
+Simons bistro	København
+Spécialités du monde	Paris
+Split Rail Beer & Ale	Lander
+Suprêmes délices	Charleroi
+The Big Cheese	Portland
+The Cracker Box	Butte
+Toms Spezialitäten	Münster
+Tortuga Restaurante	México D.F.
+Tradição Hipermercados	São Paulo
+Trail's Head Gourmet Provisioners	Kirkland
+Vaffeljernet	Århus
+Victuailles en stock	Lyon
+Vins et alcools Chevalier	Reims
+Die Wandernde Kuh	Stuttgart
+Wartian Herkku	Oulu
+Wellington Importadora	Resende
+White Clover Markets	Seattle
+Wilman Kala	Helsinki
+Wolski	Walla
+
+SELECT * FROM Customers;
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+6	Blauer See Delikatessen	Hanna Moos	Forsterstr. 57	Mannheim	68306	Germany
+7	Blondel père et fils	Frédérique Citeaux	24, place Kléber	Strasbourg	67000	France
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+9	Bon app'	Laurence Lebihans	12, rue des Bouchers	Marseille	13008	France
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+11	B's Beverages	Victoria Ashworth	Fauntleroy Circus	London	EC2 5NT	UK
+12	Cactus Comidas para llevar	Patricio Simpson	Cerrito 333	Buenos Aires	1010	Argentina
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+14	Chop-suey Chinese	Yang Wang	Hauptstr. 29	Bern	3012	Switzerland
+15	Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23	São Paulo	05432-043	Brazil
+16	Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery	London	WX1 6LT	UK
+17	Drachenblut Delikatessend	Sven Ottlieb	Walserweg 21	Aachen	52066	Germany
+18	Du monde entier	Janine Labrune	67, rue des Cinquante Otages	Nantes	44000	France
+19	Eastern Connection	Ann Devon	35 King George	London	WX3 6FW	UK
+20	Ernst Handel	Roland Mendel	Kirchgasse 6	Graz	8010	Austria
+21	Familia Arquibaldo	Aria Cruz	Rua Orós, 92	São Paulo	05442-030	Brazil
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+23	Folies gourmandes	Martine Rancé	184, chaussée de Tournai	Lille	59000	France
+24	Folk och fä HB	Maria Larsson	Åkergatan 24	Bräcke	S-844 67	Sweden
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+26	France restauration	Carine Schmitt	54, rue Royale	Nantes	44000	France
+27	Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34	Torino	10100	Italy
+28	Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32	Lisboa	1675	Portugal
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+31	Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442	Campinas	04876-786	Brazil
+32	Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.	Eugene	97403	USA
+33	GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes	Caracas	1081	Venezuela
+34	Hanari Carnes	Mario Pontes	Rua do Paço, 67	Rio de Janeiro	05454-876	Brazil
+35	HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35	San Cristóbal	5022	Venezuela
+36	Hungry Coyote Import Store	Yoshi Latimer	City Center Plaza 516 Main St.	Elgin	97827	USA
+37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork		Ireland
+38	Island Trading	Helen Bennett	Garden House Crowther Way	Cowes	PO31 7PJ	UK
+39	Königlich Essen	Philip Cramer	Maubelstr. 90	Brandenburg	14776	Germany
+40	La corne d'abondance	Daniel Tonini	67, avenue de l'Europe	Versailles	78000	France
+41	La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine	Toulouse	31000	France
+42	Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.	Vancouver	V3F 2K1	Canada
+43	Lazy K Kountry Store	John Steel	12 Orchestra Terrace	Walla Walla	99362	USA
+44	Lehmanns Marktstand	Renate Messner	Magazinweg 7	Frankfurt a.M.	60528	Germany
+45	Let's Stop N Shop	Jaime Yorres	87 Polk St. Suite 5	San Francisco	94117	USA
+46	LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo	Barquisimeto	3508	Venezuela
+47	LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar	I. de Margarita	4980	Venezuela
+48	Lonesome Pine Restaurant	Fran Wilson	89 Chiaroscuro Rd.	Portland	97219	USA
+49	Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22	Bergamo	24100	Italy
+50	Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532	Bruxelles	B-1180	Belgium
+51	Mère Paillarde	Jean Fresnière	43 rue St. Laurent	Montréal	H1J 1C3	Canada
+52	Morgenstern Gesundkost	Alexander Feuer	Heerstr. 22	Leipzig	04179	Germany
+53	North/South	Simon Crowther	South House 300 Queensbridge	London	SW7 1RZ	UK
+54	Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A	Buenos Aires	1010	Argentina
+55	Old World Delicatessen	Rene Phillips	2743 Bering St.	Anchorage	99508	USA
+56	Ottilies Käseladen	Henriette Pfalzheim	Mehrheimerstr. 369	Köln	50739	Germany
+57	Paris spécialités	Marie Bertrand	265, boulevard Charonne	Paris	75012	France
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+59	Piccolo und mehr	Georg Pipps	Geislweg 14	Salzburg	5020	Austria
+60	Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58	Lisboa	1756	Portugal
+61	Que Delícia	Bernardo Batista	Rua da Panificadora, 12	Rio de Janeiro	02389-673	Brazil
+62	Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891	São Paulo	05487-020	Brazil
+63	QUICK-Stop	Horst Kloss	Taucherstraße 10	Cunewalde	01307	Germany
+64	Rancho grande	Sergio Gutiérrez	Av. del Libertador 900	Buenos Aires	1010	Argentina
+65	Rattlesnake Canyon Grocery	Paula Wilson	2817 Milton Dr.	Albuquerque	87110	USA
+66	Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124	Reggio Emilia	42100	Italy
+67	Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267	Rio de Janeiro	02389-890	Brazil
+68	Richter Supermarkt	Michael Holz	Grenzacherweg 237	Genève	1203	Switzerland
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+70	Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78	Stavern	4110	Norway
+71	Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.	Boise	83720	USA
+72	Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.	London	OX15 4NB	UK
+73	Simons bistro	Jytte Petersen	Vinbæltet 34	København	1734	Denmark
+74	Spécialités du monde	Dominique Perrier	25, rue Lauriston	Paris	75016	France
+75	Split Rail Beer & Ale	Art Braunschweiger	P.O. Box 555	Lander	82520	USA
+76	Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255	Charleroi	B-6000	Belgium
+77	The Big Cheese	Liz Nixon	89 Jefferson Way Suite 2	Portland	97201	USA
+78	The Cracker Box	Liu Wong	55 Grizzly Peak Rd.	Butte	59801	USA
+79	Toms Spezialitäten	Karin Josephs	Luisenstr. 48	Münster	44087	Germany
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+81	Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414	São Paulo	05634-030	Brazil
+82	Trail's Head Gourmet Provisioners	Helvetius Nagy	722 DaVinci Blvd.	Kirkland	98034	USA
+83	Vaffeljernet	Palle Ibsen	Smagsløget 45	Århus	8200	Denmark
+84	Victuailles en stock	Mary Saveley	2, rue du Commerce	Lyon	69004	France
+85	Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye	Reims	51100	France
+86	Die Wandernde Kuh	Rita Müller	Adenauerallee 900	Stuttgart	70563	Germany
+87	Wartian Herkku	Pirkko Koskitalo	Torikatu 38	Oulu	90110	Finland
+88	Wellington Importadora	Paula Parente	Rua do Mercado, 12	Resende	08737-363	Brazil
+89	White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B	Seattle	98128	USA
+90	Wilman Kala	Matti Karttunen	Keskuskatu 45	Helsinki	21240	Finland
+91	Wolski	Zbyszek	ul. Filtrowa 68	Walla	01-012	Poland
+
+SELECT Country FROM Customers;
+
+Country
+Germany
+Mexico
+Mexico
+UK
+Sweden
+Germany
+France
+Spain
+France
+Canada
+UK
+Argentina
+Mexico
+Switzerland
+Brazil
+UK
+Germany
+France
+UK
+Austria
+Brazil
+Spain
+France
+Sweden
+Germany
+France
+Italy
+Portugal
+Spain
+Spain
+Brazil
+USA
+Venezuela
+Brazil
+Venezuela
+USA
+Ireland
+UK
+Germany
+France
+France
+Canada
+USA
+Germany
+USA
+Venezuela
+Venezuela
+USA
+Italy
+Belgium
+Canada
+Germany
+UK
+Argentina
+USA
+Germany
+France
+Mexico
+Austria
+Portugal
+Brazil
+Brazil
+Germany
+Argentina
+USA
+Italy
+Brazil
+Switzerland
+Spain
+Norway
+USA
+UK
+Denmark
+France
+USA
+Belgium
+USA
+USA
+Germany
+Mexico
+Brazil
+USA
+Denmark
+France
+France
+Germany
+Finland
+Brazil
+USA
+Finland
+Poland
+
+SELECT DISTINCT Country FROM Customers;
+
+Country
+Germany
+Mexico
+UK
+Sweden
+France
+Spain
+Canada
+Argentina
+Switzerland
+Brazil
+Austria
+Italy
+Portugal
+USA
+Venezuela
+Ireland
+Belgium
+Norway
+Denmark
+Finland
+Poland
+
+SELECT COUNT(DISTINCT Country) FROM Customers;
+
+COUNT(DISTINCT Country)
+21
+
+SELECT Count(*) AS DistinctCountries
+FROM (SELECT DISTINCT Country FROM Customers);
+
+DistinctCountries
+21
+
+SELECT * FROM Customers
+WHERE Country='Mexico';
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+
+SELECT * FROM Customers
+WHERE CustomerID=1;
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+
+SELECT * FROM Customers
+WHERE Country='Germany' AND City='Berlin';
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+
+SELECT * FROM Customers
+WHERE City='Berlin' OR City='München';
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+
+SELECT * FROM Customers
+WHERE Country='Germany' OR Country='Spain';
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+6	Blauer See Delikatessen	Hanna Moos	Forsterstr. 57	Mannheim	68306	Germany
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+17	Drachenblut Delikatessend	Sven Ottlieb	Walserweg 21	Aachen	52066	Germany
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+39	Königlich Essen	Philip Cramer	Maubelstr. 90	Brandenburg	14776	Germany
+44	Lehmanns Marktstand	Renate Messner	Magazinweg 7	Frankfurt a.M.	60528	Germany
+52	Morgenstern Gesundkost	Alexander Feuer	Heerstr. 22	Leipzig	04179	Germany
+56	Ottilies Käseladen	Henriette Pfalzheim	Mehrheimerstr. 369	Köln	50739	Germany
+63	QUICK-Stop	Horst Kloss	Taucherstraße 10	Cunewalde	01307	Germany
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+79	Toms Spezialitäten	Karin Josephs	Luisenstr. 48	Münster	44087	Germany
+86	Die Wandernde Kuh	Rita Müller	Adenauerallee 900	Stuttgart	70563	Germany
+
+SELECT * FROM Customers
+WHERE NOT Country='Germany';
+
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+7	Blondel père et fils	Frédérique Citeaux	24, place Kléber	Strasbourg	67000	France
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+9	Bon app'	Laurence Lebihans	12, rue des Bouchers	Marseille	13008	France
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+11	B's Beverages	Victoria Ashworth	Fauntleroy Circus	London	EC2 5NT	UK
+12	Cactus Comidas para llevar	Patricio Simpson	Cerrito 333	Buenos Aires	1010	Argentina
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+14	Chop-suey Chinese	Yang Wang	Hauptstr. 29	Bern	3012	Switzerland
+15	Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23	São Paulo	05432-043	Brazil
+16	Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery	London	WX1 6LT	UK
+18	Du monde entier	Janine Labrune	67, rue des Cinquante Otages	Nantes	44000	France
+19	Eastern Connection	Ann Devon	35 King George	London	WX3 6FW	UK
+20	Ernst Handel	Roland Mendel	Kirchgasse 6	Graz	8010	Austria
+21	Familia Arquibaldo	Aria Cruz	Rua Orós, 92	São Paulo	05442-030	Brazil
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+23	Folies gourmandes	Martine Rancé	184, chaussée de Tournai	Lille	59000	France
+24	Folk och fä HB	Maria Larsson	Åkergatan 24	Bräcke	S-844 67	Sweden
+26	France restauration	Carine Schmitt	54, rue Royale	Nantes	44000	France
+27	Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34	Torino	10100	Italy
+28	Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32	Lisboa	1675	Portugal
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+31	Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442	Campinas	04876-786	Brazil
+32	Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.	Eugene	97403	USA
+33	GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes	Caracas	1081	Venezuela
+34	Hanari Carnes	Mario Pontes	Rua do Paço, 67	Rio de Janeiro	05454-876	Brazil
+35	HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35	San Cristóbal	5022	Venezuela
+36	Hungry Coyote Import Store	Yoshi Latimer	City Center Plaza 516 Main St.	Elgin	97827	USA
+37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork		Ireland
+38	Island Trading	Helen Bennett	Garden House Crowther Way	Cowes	PO31 7PJ	UK
+40	La corne d'abondance	Daniel Tonini	67, avenue de l'Europe	Versailles	78000	France
+41	La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine	Toulouse	31000	France
+42	Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.	Vancouver	V3F 2K1	Canada
+43	Lazy K Kountry Store	John Steel	12 Orchestra Terrace	Walla Walla	99362	USA
+45	Let's Stop N Shop	Jaime Yorres	87 Polk St. Suite 5	San Francisco	94117	USA
+46	LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo	Barquisimeto	3508	Venezuela
+47	LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar	I. de Margarita	4980	Venezuela
+48	Lonesome Pine Restaurant	Fran Wilson	89 Chiaroscuro Rd.	Portland	97219	USA
+49	Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22	Bergamo	24100	Italy
+50	Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532	Bruxelles	B-1180	Belgium
+51	Mère Paillarde	Jean Fresnière	43 rue St. Laurent	Montréal	H1J 1C3	Canada
+53	North/South	Simon Crowther	South House 300 Queensbridge	London	SW7 1RZ	UK
+54	Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A	Buenos Aires	1010	Argentina
+55	Old World Delicatessen	Rene Phillips	2743 Bering St.	Anchorage	99508	USA
+57	Paris spécialités	Marie Bertrand	265, boulevard Charonne	Paris	75012	France
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+59	Piccolo und mehr	Georg Pipps	Geislweg 14	Salzburg	5020	Austria
+60	Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58	Lisboa	1756	Portugal
+61	Que Delícia	Bernardo Batista	Rua da Panificadora, 12	Rio de Janeiro	02389-673	Brazil
+62	Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891	São Paulo	05487-020	Brazil
+64	Rancho grande	Sergio Gutiérrez	Av. del Libertador 900	Buenos Aires	1010	Argentina
+65	Rattlesnake Canyon Grocery	Paula Wilson	2817 Milton Dr.	Albuquerque	87110	USA
+66	Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124	Reggio Emilia	42100	Italy
+67	Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267	Rio de Janeiro	02389-890	Brazil
+68	Richter Supermarkt	Michael Holz	Grenzacherweg 237	Genève	1203	Switzerland
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+70	Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78	Stavern	4110	Norway
+71	Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.	Boise	83720	USA
+72	Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.	London	OX15 4NB	UK
+73	Simons bistro	Jytte Petersen	Vinbæltet 34	København	1734	Denmark
+74	Spécialités du monde	Dominique Perrier	25, rue Lauriston	Paris	75016	France
+75	Split Rail Beer & Ale	Art Braunschweiger	P.O. Box 555	Lander	82520	USA
+76	Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255	Charleroi	B-6000	Belgium
+77	The Big Cheese	Liz Nixon	89 Jefferson Way Suite 2	Portland	97201	USA
+78	The Cracker Box	Liu Wong	55 Grizzly Peak Rd.	Butte	59801	USA
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+81	Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414	São Paulo	05634-030	Brazil
+82	Trail's Head Gourmet Provisioners	Helvetius Nagy	722 DaVinci Blvd.	Kirkland	98034	USA
+83	Vaffeljernet	Palle Ibsen	Smagsløget 45	Århus	8200	Denmark
+84	Victuailles en stock	Mary Saveley	2, rue du Commerce	Lyon	69004	France
+85	Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye	Reims	51100	France
+87	Wartian Herkku	Pirkko Koskitalo	Torikatu 38	Oulu	90110	Finland
+88	Wellington Importadora	Paula Parente	Rua do Mercado, 12	Resende	08737-363	Brazil
+89	White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B	Seattle	98128	USA
+90	Wilman Kala	Matti Karttunen	Keskuskatu 45	Helsinki	21240	Finland
+91	Wolski	Zbyszek	ul. Filtrowa 68	Walla	01-012	Poland
+
+SELECT * FROM Customers
+WHERE Country='Germany' AND (City='Berlin' OR City='München');
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+
+SELECT * FROM Customers
+WHERE NOT Country='Germany' AND NOT Country='USA';
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+7	Blondel père et fils	Frédérique Citeaux	24, place Kléber	Strasbourg	67000	France
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+9	Bon app'	Laurence Lebihans	12, rue des Bouchers	Marseille	13008	France
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+11	B's Beverages	Victoria Ashworth	Fauntleroy Circus	London	EC2 5NT	UK
+12	Cactus Comidas para llevar	Patricio Simpson	Cerrito 333	Buenos Aires	1010	Argentina
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+14	Chop-suey Chinese	Yang Wang	Hauptstr. 29	Bern	3012	Switzerland
+15	Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23	São Paulo	05432-043	Brazil
+16	Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery	London	WX1 6LT	UK
+18	Du monde entier	Janine Labrune	67, rue des Cinquante Otages	Nantes	44000	France
+19	Eastern Connection	Ann Devon	35 King George	London	WX3 6FW	UK
+20	Ernst Handel	Roland Mendel	Kirchgasse 6	Graz	8010	Austria
+21	Familia Arquibaldo	Aria Cruz	Rua Orós, 92	São Paulo	05442-030	Brazil
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+23	Folies gourmandes	Martine Rancé	184, chaussée de Tournai	Lille	59000	France
+24	Folk och fä HB	Maria Larsson	Åkergatan 24	Bräcke	S-844 67	Sweden
+26	France restauration	Carine Schmitt	54, rue Royale	Nantes	44000	France
+27	Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34	Torino	10100	Italy
+28	Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32	Lisboa	1675	Portugal
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+31	Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442	Campinas	04876-786	Brazil
+33	GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes	Caracas	1081	Venezuela
+34	Hanari Carnes	Mario Pontes	Rua do Paço, 67	Rio de Janeiro	05454-876	Brazil
+35	HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35	San Cristóbal	5022	Venezuela
+37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork		Ireland
+38	Island Trading	Helen Bennett	Garden House Crowther Way	Cowes	PO31 7PJ	UK
+40	La corne d'abondance	Daniel Tonini	67, avenue de l'Europe	Versailles	78000	France
+41	La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine	Toulouse	31000	France
+42	Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.	Vancouver	V3F 2K1	Canada
+46	LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo	Barquisimeto	3508	Venezuela
+47	LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar	I. de Margarita	4980	Venezuela
+49	Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22	Bergamo	24100	Italy
+50	Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532	Bruxelles	B-1180	Belgium
+51	Mère Paillarde	Jean Fresnière	43 rue St. Laurent	Montréal	H1J 1C3	Canada
+53	North/South	Simon Crowther	South House 300 Queensbridge	London	SW7 1RZ	UK
+54	Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A	Buenos Aires	1010	Argentina
+57	Paris spécialités	Marie Bertrand	265, boulevard Charonne	Paris	75012	France
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+59	Piccolo und mehr	Georg Pipps	Geislweg 14	Salzburg	5020	Austria
+60	Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58	Lisboa	1756	Portugal
+61	Que Delícia	Bernardo Batista	Rua da Panificadora, 12	Rio de Janeiro	02389-673	Brazil
+62	Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891	São Paulo	05487-020	Brazil
+64	Rancho grande	Sergio Gutiérrez	Av. del Libertador 900	Buenos Aires	1010	Argentina
+66	Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124	Reggio Emilia	42100	Italy
+67	Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267	Rio de Janeiro	02389-890	Brazil
+68	Richter Supermarkt	Michael Holz	Grenzacherweg 237	Genève	1203	Switzerland
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+70	Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78	Stavern	4110	Norway
+72	Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.	London	OX15 4NB	UK
+73	Simons bistro	Jytte Petersen	Vinbæltet 34	København	1734	Denmark
+74	Spécialités du monde	Dominique Perrier	25, rue Lauriston	Paris	75016	France
+76	Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255	Charleroi	B-6000	Belgium
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+81	Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414	São Paulo	05634-030	Brazil
+83	Vaffeljernet	Palle Ibsen	Smagsløget 45	Århus	8200	Denmark
+84	Victuailles en stock	Mary Saveley	2, rue du Commerce	Lyon	69004	France
+85	Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye	Reims	51100	France
+87	Wartian Herkku	Pirkko Koskitalo	Torikatu 38	Oulu	90110	Finland
+88	Wellington Importadora	Paula Parente	Rua do Mercado, 12	Resende	08737-363	Brazil
+90	Wilman Kala	Matti Karttunen	Keskuskatu 45	Helsinki	21240	Finland
+91	Wolski	Zbyszek	ul. Filtrowa 68	Walla	01-012	Poland
+
+SELECT * FROM Customers WHERE City = 'Berlin' AND PostalCode = 12209;
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+
+SELECT * FROM Customers ORDER BY Country;
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+12	Cactus Comidas para llevar	Patricio Simpson	Cerrito 333	Buenos Aires	1010	Argentina
+54	Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A	Buenos Aires	1010	Argentina
+64	Rancho grande	Sergio Gutiérrez	Av. del Libertador 900	Buenos Aires	1010	Argentina
+20	Ernst Handel	Roland Mendel	Kirchgasse 6	Graz	8010	Austria
+59	Piccolo und mehr	Georg Pipps	Geislweg 14	Salzburg	5020	Austria
+50	Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532	Bruxelles	B-1180	Belgium
+76	Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255	Charleroi	B-6000	Belgium
+15	Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23	São Paulo	05432-043	Brazil
+21	Familia Arquibaldo	Aria Cruz	Rua Orós, 92	São Paulo	05442-030	Brazil
+31	Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442	Campinas	04876-786	Brazil
+34	Hanari Carnes	Mario Pontes	Rua do Paço, 67	Rio de Janeiro	05454-876	Brazil
+61	Que Delícia	Bernardo Batista	Rua da Panificadora, 12	Rio de Janeiro	02389-673	Brazil
+62	Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891	São Paulo	05487-020	Brazil
+67	Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267	Rio de Janeiro	02389-890	Brazil
+81	Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414	São Paulo	05634-030	Brazil
+88	Wellington Importadora	Paula Parente	Rua do Mercado, 12	Resende	08737-363	Brazil
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+42	Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.	Vancouver	V3F 2K1	Canada
+51	Mère Paillarde	Jean Fresnière	43 rue St. Laurent	Montréal	H1J 1C3	Canada
+73	Simons bistro	Jytte Petersen	Vinbæltet 34	København	1734	Denmark
+83	Vaffeljernet	Palle Ibsen	Smagsløget 45	Århus	8200	Denmark
+87	Wartian Herkku	Pirkko Koskitalo	Torikatu 38	Oulu	90110	Finland
+90	Wilman Kala	Matti Karttunen	Keskuskatu 45	Helsinki	21240	Finland
+7	Blondel père et fils	Frédérique Citeaux	24, place Kléber	Strasbourg	67000	France
+9	Bon app'	Laurence Lebihans	12, rue des Bouchers	Marseille	13008	France
+18	Du monde entier	Janine Labrune	67, rue des Cinquante Otages	Nantes	44000	France
+23	Folies gourmandes	Martine Rancé	184, chaussée de Tournai	Lille	59000	France
+26	France restauration	Carine Schmitt	54, rue Royale	Nantes	44000	France
+40	La corne d'abondance	Daniel Tonini	67, avenue de l'Europe	Versailles	78000	France
+41	La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine	Toulouse	31000	France
+57	Paris spécialités	Marie Bertrand	265, boulevard Charonne	Paris	75012	France
+74	Spécialités du monde	Dominique Perrier	25, rue Lauriston	Paris	75016	France
+84	Victuailles en stock	Mary Saveley	2, rue du Commerce	Lyon	69004	France
+85	Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye	Reims	51100	France
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+6	Blauer See Delikatessen	Hanna Moos	Forsterstr. 57	Mannheim	68306	Germany
+17	Drachenblut Delikatessend	Sven Ottlieb	Walserweg 21	Aachen	52066	Germany
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+39	Königlich Essen	Philip Cramer	Maubelstr. 90	Brandenburg	14776	Germany
+44	Lehmanns Marktstand	Renate Messner	Magazinweg 7	Frankfurt a.M.	60528	Germany
+52	Morgenstern Gesundkost	Alexander Feuer	Heerstr. 22	Leipzig	04179	Germany
+56	Ottilies Käseladen	Henriette Pfalzheim	Mehrheimerstr. 369	Köln	50739	Germany
+63	QUICK-Stop	Horst Kloss	Taucherstraße 10	Cunewalde	01307	Germany
+79	Toms Spezialitäten	Karin Josephs	Luisenstr. 48	Münster	44087	Germany
+86	Die Wandernde Kuh	Rita Müller	Adenauerallee 900	Stuttgart	70563	Germany
+37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork		Ireland
+27	Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34	Torino	10100	Italy
+49	Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22	Bergamo	24100	Italy
+66	Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124	Reggio Emilia	42100	Italy
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+70	Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78	Stavern	4110	Norway
+91	Wolski	Zbyszek	ul. Filtrowa 68	Walla	01-012	Poland
+28	Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32	Lisboa	1675	Portugal
+60	Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58	Lisboa	1756	Portugal
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+24	Folk och fä HB	Maria Larsson	Åkergatan 24	Bräcke	S-844 67	Sweden
+14	Chop-suey Chinese	Yang Wang	Hauptstr. 29	Bern	3012	Switzerland
+68	Richter Supermarkt	Michael Holz	Grenzacherweg 237	Genève	1203	Switzerland
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+11	B's Beverages	Victoria Ashworth	Fauntleroy Circus	London	EC2 5NT	UK
+16	Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery	London	WX1 6LT	UK
+19	Eastern Connection	Ann Devon	35 King George	London	WX3 6FW	UK
+38	Island Trading	Helen Bennett	Garden House Crowther Way	Cowes	PO31 7PJ	UK
+53	North/South	Simon Crowther	South House 300 Queensbridge	London	SW7 1RZ	UK
+72	Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.	London	OX15 4NB	UK
+32	Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.	Eugene	97403	USA
+36	Hungry Coyote Import Store	Yoshi Latimer	City Center Plaza 516 Main St.	Elgin	97827	USA
+43	Lazy K Kountry Store	John Steel	12 Orchestra Terrace	Walla Walla	99362	USA
+45	Let's Stop N Shop	Jaime Yorres	87 Polk St. Suite 5	San Francisco	94117	USA
+48	Lonesome Pine Restaurant	Fran Wilson	89 Chiaroscuro Rd.	Portland	97219	USA
+55	Old World Delicatessen	Rene Phillips	2743 Bering St.	Anchorage	99508	USA
+65	Rattlesnake Canyon Grocery	Paula Wilson	2817 Milton Dr.	Albuquerque	87110	USA
+71	Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.	Boise	83720	USA
+75	Split Rail Beer & Ale	Art Braunschweiger	P.O. Box 555	Lander	82520	USA
+77	The Big Cheese	Liz Nixon	89 Jefferson Way Suite 2	Portland	97201	USA
+78	The Cracker Box	Liu Wong	55 Grizzly Peak Rd.	Butte	59801	USA
+82	Trail's Head Gourmet Provisioners	Helvetius Nagy	722 DaVinci Blvd.	Kirkland	98034	USA
+89	White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B	Seattle	98128	USA
+33	GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes	Caracas	1081	Venezuela
+35	HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35	San Cristóbal	5022	Venezuela
+46	LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo	Barquisimeto	3508	Venezuela
+47	LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar	I. de Margarita	4980	Venezuela
+
+SELECT * FROM Customers ORDER BY Country DESC;
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+33	GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes	Caracas	1081	Venezuela
+35	HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35	San Cristóbal	5022	Venezuela
+46	LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo	Barquisimeto	3508	Venezuela
+47	LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar	I. de Margarita	4980	Venezuela
+32	Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.	Eugene	97403	USA
+36	Hungry Coyote Import Store	Yoshi Latimer	City Center Plaza 516 Main St.	Elgin	97827	USA
+43	Lazy K Kountry Store	John Steel	12 Orchestra Terrace	Walla Walla	99362	USA
+45	Let's Stop N Shop	Jaime Yorres	87 Polk St. Suite 5	San Francisco	94117	USA
+48	Lonesome Pine Restaurant	Fran Wilson	89 Chiaroscuro Rd.	Portland	97219	USA
+55	Old World Delicatessen	Rene Phillips	2743 Bering St.	Anchorage	99508	USA
+65	Rattlesnake Canyon Grocery	Paula Wilson	2817 Milton Dr.	Albuquerque	87110	USA
+71	Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.	Boise	83720	USA
+75	Split Rail Beer & Ale	Art Braunschweiger	P.O. Box 555	Lander	82520	USA
+77	The Big Cheese	Liz Nixon	89 Jefferson Way Suite 2	Portland	97201	USA
+78	The Cracker Box	Liu Wong	55 Grizzly Peak Rd.	Butte	59801	USA
+82	Trail's Head Gourmet Provisioners	Helvetius Nagy	722 DaVinci Blvd.	Kirkland	98034	USA
+89	White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B	Seattle	98128	USA
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+11	B's Beverages	Victoria Ashworth	Fauntleroy Circus	London	EC2 5NT	UK
+16	Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery	London	WX1 6LT	UK
+19	Eastern Connection	Ann Devon	35 King George	London	WX3 6FW	UK
+38	Island Trading	Helen Bennett	Garden House Crowther Way	Cowes	PO31 7PJ	UK
+53	North/South	Simon Crowther	South House 300 Queensbridge	London	SW7 1RZ	UK
+72	Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.	London	OX15 4NB	UK
+14	Chop-suey Chinese	Yang Wang	Hauptstr. 29	Bern	3012	Switzerland
+68	Richter Supermarkt	Michael Holz	Grenzacherweg 237	Genève	1203	Switzerland
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+24	Folk och fä HB	Maria Larsson	Åkergatan 24	Bräcke	S-844 67	Sweden
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+28	Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32	Lisboa	1675	Portugal
+60	Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58	Lisboa	1756	Portugal
+91	Wolski	Zbyszek	ul. Filtrowa 68	Walla	01-012	Poland
+70	Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78	Stavern	4110	Norway
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+27	Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34	Torino	10100	Italy
+49	Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22	Bergamo	24100	Italy
+66	Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124	Reggio Emilia	42100	Italy
+37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork		Ireland
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+6	Blauer See Delikatessen	Hanna Moos	Forsterstr. 57	Mannheim	68306	Germany
+17	Drachenblut Delikatessend	Sven Ottlieb	Walserweg 21	Aachen	52066	Germany
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+39	Königlich Essen	Philip Cramer	Maubelstr. 90	Brandenburg	14776	Germany
+44	Lehmanns Marktstand	Renate Messner	Magazinweg 7	Frankfurt a.M.	60528	Germany
+52	Morgenstern Gesundkost	Alexander Feuer	Heerstr. 22	Leipzig	04179	Germany
+56	Ottilies Käseladen	Henriette Pfalzheim	Mehrheimerstr. 369	Köln	50739	Germany
+63	QUICK-Stop	Horst Kloss	Taucherstraße 10	Cunewalde	01307	Germany
+79	Toms Spezialitäten	Karin Josephs	Luisenstr. 48	Münster	44087	Germany
+86	Die Wandernde Kuh	Rita Müller	Adenauerallee 900	Stuttgart	70563	Germany
+7	Blondel père et fils	Frédérique Citeaux	24, place Kléber	Strasbourg	67000	France
+9	Bon app'	Laurence Lebihans	12, rue des Bouchers	Marseille	13008	France
+18	Du monde entier	Janine Labrune	67, rue des Cinquante Otages	Nantes	44000	France
+23	Folies gourmandes	Martine Rancé	184, chaussée de Tournai	Lille	59000	France
+26	France restauration	Carine Schmitt	54, rue Royale	Nantes	44000	France
+40	La corne d'abondance	Daniel Tonini	67, avenue de l'Europe	Versailles	78000	France
+41	La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine	Toulouse	31000	France
+57	Paris spécialités	Marie Bertrand	265, boulevard Charonne	Paris	75012	France
+74	Spécialités du monde	Dominique Perrier	25, rue Lauriston	Paris	75016	France
+84	Victuailles en stock	Mary Saveley	2, rue du Commerce	Lyon	69004	France
+85	Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye	Reims	51100	France
+87	Wartian Herkku	Pirkko Koskitalo	Torikatu 38	Oulu	90110	Finland
+90	Wilman Kala	Matti Karttunen	Keskuskatu 45	Helsinki	21240	Finland
+73	Simons bistro	Jytte Petersen	Vinbæltet 34	København	1734	Denmark
+83	Vaffeljernet	Palle Ibsen	Smagsløget 45	Århus	8200	Denmark
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+42	Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.	Vancouver	V3F 2K1	Canada
+51	Mère Paillarde	Jean Fresnière	43 rue St. Laurent	Montréal	H1J 1C3	Canada
+15	Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23	São Paulo	05432-043	Brazil
+21	Familia Arquibaldo	Aria Cruz	Rua Orós, 92	São Paulo	05442-030	Brazil
+31	Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442	Campinas	04876-786	Brazil
+34	Hanari Carnes	Mario Pontes	Rua do Paço, 67	Rio de Janeiro	05454-876	Brazil
+61	Que Delícia	Bernardo Batista	Rua da Panificadora, 12	Rio de Janeiro	02389-673	Brazil
+62	Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891	São Paulo	05487-020	Brazil
+67	Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267	Rio de Janeiro	02389-890	Brazil
+81	Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414	São Paulo	05634-030	Brazil
+88	Wellington Importadora	Paula Parente	Rua do Mercado, 12	Resende	08737-363	Brazil
+50	Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532	Bruxelles	B-1180	Belgium
+76	Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255	Charleroi	B-6000	Belgium
+20	Ernst Handel	Roland Mendel	Kirchgasse 6	Graz	8010	Austria
+59	Piccolo und mehr	Georg Pipps	Geislweg 14	Salzburg	5020	Austria
+12	Cactus Comidas para llevar	Patricio Simpson	Cerrito 333	Buenos Aires	1010	Argentina
+54	Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A	Buenos Aires	1010	Argentina
+64	Rancho grande	Sergio Gutiérrez	Av. del Libertador 900	Buenos Aires	1010	Argentina
+
+SELECT * FROM Customers ORDER BY Country, CustomerName;
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+12	Cactus Comidas para llevar	Patricio Simpson	Cerrito 333	Buenos Aires	1010	Argentina
+54	Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A	Buenos Aires	1010	Argentina
+64	Rancho grande	Sergio Gutiérrez	Av. del Libertador 900	Buenos Aires	1010	Argentina
+20	Ernst Handel	Roland Mendel	Kirchgasse 6	Graz	8010	Austria
+59	Piccolo und mehr	Georg Pipps	Geislweg 14	Salzburg	5020	Austria
+50	Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532	Bruxelles	B-1180	Belgium
+76	Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255	Charleroi	B-6000	Belgium
+15	Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23	São Paulo	05432-043	Brazil
+21	Familia Arquibaldo	Aria Cruz	Rua Orós, 92	São Paulo	05442-030	Brazil
+31	Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442	Campinas	04876-786	Brazil
+34	Hanari Carnes	Mario Pontes	Rua do Paço, 67	Rio de Janeiro	05454-876	Brazil
+61	Que Delícia	Bernardo Batista	Rua da Panificadora, 12	Rio de Janeiro	02389-673	Brazil
+62	Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891	São Paulo	05487-020	Brazil
+67	Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267	Rio de Janeiro	02389-890	Brazil
+81	Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414	São Paulo	05634-030	Brazil
+88	Wellington Importadora	Paula Parente	Rua do Mercado, 12	Resende	08737-363	Brazil
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+42	Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.	Vancouver	V3F 2K1	Canada
+51	Mère Paillarde	Jean Fresnière	43 rue St. Laurent	Montréal	H1J 1C3	Canada
+73	Simons bistro	Jytte Petersen	Vinbæltet 34	København	1734	Denmark
+83	Vaffeljernet	Palle Ibsen	Smagsløget 45	Århus	8200	Denmark
+87	Wartian Herkku	Pirkko Koskitalo	Torikatu 38	Oulu	90110	Finland
+90	Wilman Kala	Matti Karttunen	Keskuskatu 45	Helsinki	21240	Finland
+7	Blondel père et fils	Frédérique Citeaux	24, place Kléber	Strasbourg	67000	France
+9	Bon app'	Laurence Lebihans	12, rue des Bouchers	Marseille	13008	France
+18	Du monde entier	Janine Labrune	67, rue des Cinquante Otages	Nantes	44000	France
+23	Folies gourmandes	Martine Rancé	184, chaussée de Tournai	Lille	59000	France
+26	France restauration	Carine Schmitt	54, rue Royale	Nantes	44000	France
+40	La corne d'abondance	Daniel Tonini	67, avenue de l'Europe	Versailles	78000	France
+41	La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine	Toulouse	31000	France
+57	Paris spécialités	Marie Bertrand	265, boulevard Charonne	Paris	75012	France
+74	Spécialités du monde	Dominique Perrier	25, rue Lauriston	Paris	75016	France
+84	Victuailles en stock	Mary Saveley	2, rue du Commerce	Lyon	69004	France
+85	Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye	Reims	51100	France
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+6	Blauer See Delikatessen	Hanna Moos	Forsterstr. 57	Mannheim	68306	Germany
+86	Die Wandernde Kuh	Rita Müller	Adenauerallee 900	Stuttgart	70563	Germany
+17	Drachenblut Delikatessend	Sven Ottlieb	Walserweg 21	Aachen	52066	Germany
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+39	Königlich Essen	Philip Cramer	Maubelstr. 90	Brandenburg	14776	Germany
+44	Lehmanns Marktstand	Renate Messner	Magazinweg 7	Frankfurt a.M.	60528	Germany
+52	Morgenstern Gesundkost	Alexander Feuer	Heerstr. 22	Leipzig	04179	Germany
+56	Ottilies Käseladen	Henriette Pfalzheim	Mehrheimerstr. 369	Köln	50739	Germany
+63	QUICK-Stop	Horst Kloss	Taucherstraße 10	Cunewalde	01307	Germany
+79	Toms Spezialitäten	Karin Josephs	Luisenstr. 48	Münster	44087	Germany
+37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork		Ireland
+27	Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34	Torino	10100	Italy
+49	Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22	Bergamo	24100	Italy
+66	Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124	Reggio Emilia	42100	Italy
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+70	Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78	Stavern	4110	Norway
+91	Wolski	Zbyszek	ul. Filtrowa 68	Walla	01-012	Poland
+28	Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32	Lisboa	1675	Portugal
+60	Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58	Lisboa	1756	Portugal
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+24	Folk och fä HB	Maria Larsson	Åkergatan 24	Bräcke	S-844 67	Sweden
+14	Chop-suey Chinese	Yang Wang	Hauptstr. 29	Bern	3012	Switzerland
+68	Richter Supermarkt	Michael Holz	Grenzacherweg 237	Genève	1203	Switzerland
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+11	B's Beverages	Victoria Ashworth	Fauntleroy Circus	London	EC2 5NT	UK
+16	Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery	London	WX1 6LT	UK
+19	Eastern Connection	Ann Devon	35 King George	London	WX3 6FW	UK
+38	Island Trading	Helen Bennett	Garden House Crowther Way	Cowes	PO31 7PJ	UK
+53	North/South	Simon Crowther	South House 300 Queensbridge	London	SW7 1RZ	UK
+72	Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.	London	OX15 4NB	UK
+32	Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.	Eugene	97403	USA
+36	Hungry Coyote Import Store	Yoshi Latimer	City Center Plaza 516 Main St.	Elgin	97827	USA
+43	Lazy K Kountry Store	John Steel	12 Orchestra Terrace	Walla Walla	99362	USA
+45	Let's Stop N Shop	Jaime Yorres	87 Polk St. Suite 5	San Francisco	94117	USA
+48	Lonesome Pine Restaurant	Fran Wilson	89 Chiaroscuro Rd.	Portland	97219	USA
+55	Old World Delicatessen	Rene Phillips	2743 Bering St.	Anchorage	99508	USA
+65	Rattlesnake Canyon Grocery	Paula Wilson	2817 Milton Dr.	Albuquerque	87110	USA
+71	Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.	Boise	83720	USA
+75	Split Rail Beer & Ale	Art Braunschweiger	P.O. Box 555	Lander	82520	USA
+77	The Big Cheese	Liz Nixon	89 Jefferson Way Suite 2	Portland	97201	USA
+78	The Cracker Box	Liu Wong	55 Grizzly Peak Rd.	Butte	59801	USA
+82	Trail's Head Gourmet Provisioners	Helvetius Nagy	722 DaVinci Blvd.	Kirkland	98034	USA
+89	White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B	Seattle	98128	USA
+33	GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes	Caracas	1081	Venezuela
+35	HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35	San Cristóbal	5022	Venezuela
+46	LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo	Barquisimeto	3508	Venezuela
+47	LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar	I. de Margarita	4980	Venezuela
+
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+64	Rancho grande	Sergio Gutiérrez	Av. del Libertador 900	Buenos Aires	1010	Argentina
+54	Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A	Buenos Aires	1010	Argentina
+12	Cactus Comidas para llevar	Patricio Simpson	Cerrito 333	Buenos Aires	1010	Argentina
+59	Piccolo und mehr	Georg Pipps	Geislweg 14	Salzburg	5020	Austria
+20	Ernst Handel	Roland Mendel	Kirchgasse 6	Graz	8010	Austria
+76	Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255	Charleroi	B-6000	Belgium
+50	Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532	Bruxelles	B-1180	Belgium
+88	Wellington Importadora	Paula Parente	Rua do Mercado, 12	Resende	08737-363	Brazil
+81	Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414	São Paulo	05634-030	Brazil
+67	Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267	Rio de Janeiro	02389-890	Brazil
+62	Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891	São Paulo	05487-020	Brazil
+61	Que Delícia	Bernardo Batista	Rua da Panificadora, 12	Rio de Janeiro	02389-673	Brazil
+34	Hanari Carnes	Mario Pontes	Rua do Paço, 67	Rio de Janeiro	05454-876	Brazil
+31	Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442	Campinas	04876-786	Brazil
+21	Familia Arquibaldo	Aria Cruz	Rua Orós, 92	São Paulo	05442-030	Brazil
+15	Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23	São Paulo	05432-043	Brazil
+51	Mère Paillarde	Jean Fresnière	43 rue St. Laurent	Montréal	H1J 1C3	Canada
+42	Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.	Vancouver	V3F 2K1	Canada
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+83	Vaffeljernet	Palle Ibsen	Smagsløget 45	Århus	8200	Denmark
+73	Simons bistro	Jytte Petersen	Vinbæltet 34	København	1734	Denmark
+90	Wilman Kala	Matti Karttunen	Keskuskatu 45	Helsinki	21240	Finland
+87	Wartian Herkku	Pirkko Koskitalo	Torikatu 38	Oulu	90110	Finland
+85	Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye	Reims	51100	France
+84	Victuailles en stock	Mary Saveley	2, rue du Commerce	Lyon	69004	France
+74	Spécialités du monde	Dominique Perrier	25, rue Lauriston	Paris	75016	France
+57	Paris spécialités	Marie Bertrand	265, boulevard Charonne	Paris	75012	France
+41	La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine	Toulouse	31000	France
+40	La corne d'abondance	Daniel Tonini	67, avenue de l'Europe	Versailles	78000	France
+26	France restauration	Carine Schmitt	54, rue Royale	Nantes	44000	France
+23	Folies gourmandes	Martine Rancé	184, chaussée de Tournai	Lille	59000	France
+18	Du monde entier	Janine Labrune	67, rue des Cinquante Otages	Nantes	44000	France
+9	Bon app'	Laurence Lebihans	12, rue des Bouchers	Marseille	13008	France
+7	Blondel père et fils	Frédérique Citeaux	24, place Kléber	Strasbourg	67000	France
+79	Toms Spezialitäten	Karin Josephs	Luisenstr. 48	Münster	44087	Germany
+63	QUICK-Stop	Horst Kloss	Taucherstraße 10	Cunewalde	01307	Germany
+56	Ottilies Käseladen	Henriette Pfalzheim	Mehrheimerstr. 369	Köln	50739	Germany
+52	Morgenstern Gesundkost	Alexander Feuer	Heerstr. 22	Leipzig	04179	Germany
+44	Lehmanns Marktstand	Renate Messner	Magazinweg 7	Frankfurt a.M.	60528	Germany
+39	Königlich Essen	Philip Cramer	Maubelstr. 90	Brandenburg	14776	Germany
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+17	Drachenblut Delikatessend	Sven Ottlieb	Walserweg 21	Aachen	52066	Germany
+86	Die Wandernde Kuh	Rita Müller	Adenauerallee 900	Stuttgart	70563	Germany
+6	Blauer See Delikatessen	Hanna Moos	Forsterstr. 57	Mannheim	68306	Germany
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork		Ireland
+66	Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124	Reggio Emilia	42100	Italy
+49	Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22	Bergamo	24100	Italy
+27	Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34	Torino	10100	Italy
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+70	Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78	Stavern	4110	Norway
+91	Wolski	Zbyszek	ul. Filtrowa 68	Walla	01-012	Poland
+60	Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58	Lisboa	1756	Portugal
+28	Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32	Lisboa	1675	Portugal
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+24	Folk och fä HB	Maria Larsson	Åkergatan 24	Bräcke	S-844 67	Sweden
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+68	Richter Supermarkt	Michael Holz	Grenzacherweg 237	Genève	1203	Switzerland
+14	Chop-suey Chinese	Yang Wang	Hauptstr. 29	Bern	3012	Switzerland
+72	Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.	London	OX15 4NB	UK
+53	North/South	Simon Crowther	South House 300 Queensbridge	London	SW7 1RZ	UK
+38	Island Trading	Helen Bennett	Garden House Crowther Way	Cowes	PO31 7PJ	UK
+19	Eastern Connection	Ann Devon	35 King George	London	WX3 6FW	UK
+16	Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery	London	WX1 6LT	UK
+11	B's Beverages	Victoria Ashworth	Fauntleroy Circus	London	EC2 5NT	UK
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+89	White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B	Seattle	98128	USA
+82	Trail's Head Gourmet Provisioners	Helvetius Nagy	722 DaVinci Blvd.	Kirkland	98034	USA
+78	The Cracker Box	Liu Wong	55 Grizzly Peak Rd.	Butte	59801	USA
+77	The Big Cheese	Liz Nixon	89 Jefferson Way Suite 2	Portland	97201	USA
+75	Split Rail Beer & Ale	Art Braunschweiger	P.O. Box 555	Lander	82520	USA
+71	Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.	Boise	83720	USA
+65	Rattlesnake Canyon Grocery	Paula Wilson	2817 Milton Dr.	Albuquerque	87110	USA
+55	Old World Delicatessen	Rene Phillips	2743 Bering St.	Anchorage	99508	USA
+48	Lonesome Pine Restaurant	Fran Wilson	89 Chiaroscuro Rd.	Portland	97219	USA
+45	Let's Stop N Shop	Jaime Yorres	87 Polk St. Suite 5	San Francisco	94117	USA
+43	Lazy K Kountry Store	John Steel	12 Orchestra Terrace	Walla Walla	99362	USA
+36	Hungry Coyote Import Store	Yoshi Latimer	City Center Plaza 516 Main St.	Elgin	97827	USA
+32	Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.	Eugene	97403	USA
+47	LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar	I. de Margarita	4980	Venezuela
+46	LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo	Barquisimeto	3508	Venezuela
+35	HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35	San Cristóbal	5022	Venezuela
+33	GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes	Caracas	1081	Venezuela
+
+
+SELECT * FROM Customers ORDER BY City;
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+17	Drachenblut Delikatessend	Sven Ottlieb	Walserweg 21	Aachen	52066	Germany
+65	Rattlesnake Canyon Grocery	Paula Wilson	2817 Milton Dr.	Albuquerque	87110	USA
+55	Old World Delicatessen	Rene Phillips	2743 Bering St.	Anchorage	99508	USA
+29	Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23	Barcelona	08022	Spain
+46	LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo	Barquisimeto	3508	Venezuela
+49	Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22	Bergamo	24100	Italy
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+14	Chop-suey Chinese	Yang Wang	Hauptstr. 29	Bern	3012	Switzerland
+71	Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.	Boise	83720	USA
+39	Königlich Essen	Philip Cramer	Maubelstr. 90	Brandenburg	14776	Germany
+50	Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532	Bruxelles	B-1180	Belgium
+24	Folk och fä HB	Maria Larsson	Åkergatan 24	Bräcke	S-844 67	Sweden
+12	Cactus Comidas para llevar	Patricio Simpson	Cerrito 333	Buenos Aires	1010	Argentina
+54	Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A	Buenos Aires	1010	Argentina
+64	Rancho grande	Sergio Gutiérrez	Av. del Libertador 900	Buenos Aires	1010	Argentina
+78	The Cracker Box	Liu Wong	55 Grizzly Peak Rd.	Butte	59801	USA
+31	Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442	Campinas	04876-786	Brazil
+33	GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes	Caracas	1081	Venezuela
+76	Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255	Charleroi	B-6000	Belgium
+37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork		Ireland
+38	Island Trading	Helen Bennett	Garden House Crowther Way	Cowes	PO31 7PJ	UK
+63	QUICK-Stop	Horst Kloss	Taucherstraße 10	Cunewalde	01307	Germany
+36	Hungry Coyote Import Store	Yoshi Latimer	City Center Plaza 516 Main St.	Elgin	97827	USA
+32	Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.	Eugene	97403	USA
+44	Lehmanns Marktstand	Renate Messner	Magazinweg 7	Frankfurt a.M.	60528	Germany
+68	Richter Supermarkt	Michael Holz	Grenzacherweg 237	Genève	1203	Switzerland
+20	Ernst Handel	Roland Mendel	Kirchgasse 6	Graz	8010	Austria
+90	Wilman Kala	Matti Karttunen	Keskuskatu 45	Helsinki	21240	Finland
+47	LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar	I. de Margarita	4980	Venezuela
+82	Trail's Head Gourmet Provisioners	Helvetius Nagy	722 DaVinci Blvd.	Kirkland	98034	USA
+56	Ottilies Käseladen	Henriette Pfalzheim	Mehrheimerstr. 369	Köln	50739	Germany
+73	Simons bistro	Jytte Petersen	Vinbæltet 34	København	1734	Denmark
+75	Split Rail Beer & Ale	Art Braunschweiger	P.O. Box 555	Lander	82520	USA
+52	Morgenstern Gesundkost	Alexander Feuer	Heerstr. 22	Leipzig	04179	Germany
+23	Folies gourmandes	Martine Rancé	184, chaussée de Tournai	Lille	59000	France
+28	Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32	Lisboa	1675	Portugal
+60	Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58	Lisboa	1756	Portugal
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+11	B's Beverages	Victoria Ashworth	Fauntleroy Circus	London	EC2 5NT	UK
+16	Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery	London	WX1 6LT	UK
+19	Eastern Connection	Ann Devon	35 King George	London	WX3 6FW	UK
+53	North/South	Simon Crowther	South House 300 Queensbridge	London	SW7 1RZ	UK
+72	Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.	London	OX15 4NB	UK
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+84	Victuailles en stock	Mary Saveley	2, rue du Commerce	Lyon	69004	France
+8	Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67	Madrid	28023	Spain
+22	FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86	Madrid	28034	Spain
+69	Romero y tomillo	Alejandra Camino	Gran Vía, 1	Madrid	28001	Spain
+6	Blauer See Delikatessen	Hanna Moos	Forsterstr. 57	Mannheim	68306	Germany
+9	Bon app'	Laurence Lebihans	12, rue des Bouchers	Marseille	13008	France
+51	Mère Paillarde	Jean Fresnière	43 rue St. Laurent	Montréal	H1J 1C3	Canada
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+13	Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993	México D.F.	05022	Mexico
+58	Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321	México D.F.	05033	Mexico
+80	Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123	México D.F.	05033	Mexico
+25	Frankenversand	Peter Franken	Berliner Platz 43	München	80805	Germany
+79	Toms Spezialitäten	Karin Josephs	Luisenstr. 48	Münster	44087	Germany
+18	Du monde entier	Janine Labrune	67, rue des Cinquante Otages	Nantes	44000	France
+26	France restauration	Carine Schmitt	54, rue Royale	Nantes	44000	France
+87	Wartian Herkku	Pirkko Koskitalo	Torikatu 38	Oulu	90110	Finland
+57	Paris spécialités	Marie Bertrand	265, boulevard Charonne	Paris	75012	France
+74	Spécialités du monde	Dominique Perrier	25, rue Lauriston	Paris	75016	France
+48	Lonesome Pine Restaurant	Fran Wilson	89 Chiaroscuro Rd.	Portland	97219	USA
+77	The Big Cheese	Liz Nixon	89 Jefferson Way Suite 2	Portland	97201	USA
+66	Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124	Reggio Emilia	42100	Italy
+85	Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye	Reims	51100	France
+88	Wellington Importadora	Paula Parente	Rua do Mercado, 12	Resende	08737-363	Brazil
+34	Hanari Carnes	Mario Pontes	Rua do Paço, 67	Rio de Janeiro	05454-876	Brazil
+61	Que Delícia	Bernardo Batista	Rua da Panificadora, 12	Rio de Janeiro	02389-673	Brazil
+67	Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267	Rio de Janeiro	02389-890	Brazil
+59	Piccolo und mehr	Georg Pipps	Geislweg 14	Salzburg	5020	Austria
+35	HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35	San Cristóbal	5022	Venezuela
+45	Let's Stop N Shop	Jaime Yorres	87 Polk St. Suite 5	San Francisco	94117	USA
+89	White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B	Seattle	98128	USA
+30	Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33	Sevilla	41101	Spain
+70	Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78	Stavern	4110	Norway
+7	Blondel père et fils	Frédérique Citeaux	24, place Kléber	Strasbourg	67000	France
+86	Die Wandernde Kuh	Rita Müller	Adenauerallee 900	Stuttgart	70563	Germany
+15	Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23	São Paulo	05432-043	Brazil
+21	Familia Arquibaldo	Aria Cruz	Rua Orós, 92	São Paulo	05442-030	Brazil
+62	Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891	São Paulo	05487-020	Brazil
+81	Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414	São Paulo	05634-030	Brazil
+27	Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34	Torino	10100	Italy
+41	La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine	Toulouse	31000	France
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+42	Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.	Vancouver	V3F 2K1	Canada
+40	La corne d'abondance	Daniel Tonini	67, avenue de l'Europe	Versailles	78000	France
+91	Wolski	Zbyszek	ul. Filtrowa 68	Walla	01-012	Poland
+43	Lazy K Kountry Store	John Steel	12 Orchestra Terrace	Walla Walla	99362	USA
+83	Vaffeljernet	Palle Ibsen	Smagsløget 45	Århus	8200	Denmark
+
+SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NULL;
+
+No result.
+
+SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NOT NULL;
+
+
+CustomerName	ContactName	Address
+Alfreds Futterkiste	Maria Anders	Obere Str. 57
+Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222
+Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312
+Around the Horn	Thomas Hardy	120 Hanover Sq.
+Berglunds snabbköp	Christina Berglund	Berguvsvägen 8
+Blauer See Delikatessen	Hanna Moos	Forsterstr. 57
+Blondel père et fils	Frédérique Citeaux	24, place Kléber
+Bólido Comidas preparadas	Martín Sommer	C/ Araquil, 67
+Bon app'	Laurence Lebihans	12, rue des Bouchers
+Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.
+B's Beverages	Victoria Ashworth	Fauntleroy Circus
+Cactus Comidas para llevar	Patricio Simpson	Cerrito 333
+Centro comercial Moctezuma	Francisco Chang	Sierras de Granada 9993
+Chop-suey Chinese	Yang Wang	Hauptstr. 29
+Comércio Mineiro	Pedro Afonso	Av. dos Lusíadas, 23
+Consolidated Holdings	Elizabeth Brown	Berkeley Gardens 12 Brewery
+Drachenblut Delikatessend	Sven Ottlieb	Walserweg 21
+Du monde entier	Janine Labrune	67, rue des Cinquante Otages
+Eastern Connection	Ann Devon	35 King George
+Ernst Handel	Roland Mendel	Kirchgasse 6
+Familia Arquibaldo	Aria Cruz	Rua Orós, 92
+FISSA Fabrica Inter. Salchichas S.A.	Diego Roel	C/ Moralzarzal, 86
+Folies gourmandes	Martine Rancé	184, chaussée de Tournai
+Folk och fä HB	Maria Larsson	Åkergatan 24
+Frankenversand	Peter Franken	Berliner Platz 43
+France restauration	Carine Schmitt	54, rue Royale
+Franchi S.p.A.	Paolo Accorti	Via Monte Bianco 34
+Furia Bacalhau e Frutos do Mar	Lino Rodriguez	Jardim das rosas n. 32
+Galería del gastrónomo	Eduardo Saavedra	Rambla de Cataluña, 23
+Godos Cocina Típica	José Pedro Freyre	C/ Romero, 33
+Gourmet Lanchonetes	André Fonseca	Av. Brasil, 442
+Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.
+GROSELLA-Restaurante	Manuel Pereira	5ª Ave. Los Palos Grandes
+Hanari Carnes	Mario Pontes	Rua do Paço, 67
+HILARIÓN-Abastos	Carlos Hernández	Carrera 22 con Ave. Carlos Soublette #8-35
+Hungry Coyote Import Store	Yoshi Latimer	City Center Plaza 516 Main St.
+Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road
+Island Trading	Helen Bennett	Garden House Crowther Way
+Königlich Essen	Philip Cramer	Maubelstr. 90
+La corne d'abondance	Daniel Tonini	67, avenue de l'Europe
+La maison d'Asie	Annette Roulet	1 rue Alsace-Lorraine
+Laughing Bacchus Wine Cellars	Yoshi Tannamuri	1900 Oak St.
+Lazy K Kountry Store	John Steel	12 Orchestra Terrace
+Lehmanns Marktstand	Renate Messner	Magazinweg 7
+Let's Stop N Shop	Jaime Yorres	87 Polk St. Suite 5
+LILA-Supermercado	Carlos González	Carrera 52 con Ave. Bolívar #65-98 Llano Largo
+LINO-Delicateses	Felipe Izquierdo	Ave. 5 de Mayo Porlamar
+Lonesome Pine Restaurant	Fran Wilson	89 Chiaroscuro Rd.
+Magazzini Alimentari Riuniti	Giovanni Rovelli	Via Ludovico il Moro 22
+Maison Dewey	Catherine Dewey	Rue Joseph-Bens 532
+Mère Paillarde	Jean Fresnière	43 rue St. Laurent
+Morgenstern Gesundkost	Alexander Feuer	Heerstr. 22
+North/South	Simon Crowther	South House 300 Queensbridge
+Océano Atlántico Ltda.	Yvonne Moncada	Ing. Gustavo Moncada 8585 Piso 20-A
+Old World Delicatessen	Rene Phillips	2743 Bering St.
+Ottilies Käseladen	Henriette Pfalzheim	Mehrheimerstr. 369
+Paris spécialités	Marie Bertrand	265, boulevard Charonne
+Pericles Comidas clásicas	Guillermo Fernández	Calle Dr. Jorge Cash 321
+Piccolo und mehr	Georg Pipps	Geislweg 14
+Princesa Isabel Vinhoss	Isabel de Castro	Estrada da saúde n. 58
+Que Delícia	Bernardo Batista	Rua da Panificadora, 12
+Queen Cozinha	Lúcia Carvalho	Alameda dos Canàrios, 891
+QUICK-Stop	Horst Kloss	Taucherstraße 10
+Rancho grande	Sergio Gutiérrez	Av. del Libertador 900
+Rattlesnake Canyon Grocery	Paula Wilson	2817 Milton Dr.
+Reggiani Caseifici	Maurizio Moroni	Strada Provinciale 124
+Ricardo Adocicados	Janete Limeira	Av. Copacabana, 267
+Richter Supermarkt	Michael Holz	Grenzacherweg 237
+Romero y tomillo	Alejandra Camino	Gran Vía, 1
+Santé Gourmet	Jonas Bergulfsen	Erling Skakkes gate 78
+Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.
+Seven Seas Imports	Hari Kumar	90 Wadhurst Rd.
+Simons bistro	Jytte Petersen	Vinbæltet 34
+Spécialités du monde	Dominique Perrier	25, rue Lauriston
+Split Rail Beer & Ale	Art Braunschweiger	P.O. Box 555
+Suprêmes délices	Pascale Cartrain	Boulevard Tirou, 255
+The Big Cheese	Liz Nixon	89 Jefferson Way Suite 2
+The Cracker Box	Liu Wong	55 Grizzly Peak Rd.
+Toms Spezialitäten	Karin Josephs	Luisenstr. 48
+Tortuga Restaurante	Miguel Angel Paolino	Avda. Azteca 123
+Tradição Hipermercados	Anabela Domingues	Av. Inês de Castro, 414
+Trail's Head Gourmet Provisioners	Helvetius Nagy	722 DaVinci Blvd.
+Vaffeljernet	Palle Ibsen	Smagsløget 45
+Victuailles en stock	Mary Saveley	2, rue du Commerce
+Vins et alcools Chevalier	Paul Henriot	59 rue de l'Abbaye
+Die Wandernde Kuh	Rita Müller	Adenauerallee 900
+Wartian Herkku	Pirkko Koskitalo	Torikatu 38
+Wellington Importadora	Paula Parente	Rua do Mercado, 12
+White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B
+Wilman Kala	Matti Karttunen	Keskuskatu 45
+Wolski	Zbyszek	ul. Filtrowa 68
+
+SELECT * FROM Customers WHERE PostalCode IS NULL;
+
+No result.
