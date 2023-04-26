@@ -1,1 +1,22 @@
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
 
+Result:
+You have made changes to the database. Rows affected: 1
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+4
+
+Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+
+
+DELETE FROM Customers;
+Result:
+You have made changes to the database. Rows affected: 90
+
+DELETE FROM Customers WHERE Country = 'Norway';
+
+Result:
+You have made changes to the database.
