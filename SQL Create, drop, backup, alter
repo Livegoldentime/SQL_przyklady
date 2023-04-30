@@ -18,3 +18,7 @@ FROM customers;
 DROP TABLE FirstTable;
 TRUNCATE TABLE FirstTable;
 ALTER TABLE Customers ADD Email varchar(255);
+ALTER TABLE Customers DROP COLUMN Email;
+ALTER TABLE Persons ADD DateOfBirth date;
+ALTER TABLE Persons ALTER COLUMN DateOfBirth year;
+ALTER TABLE Persons DROP COLUMN DateOfBirth;
