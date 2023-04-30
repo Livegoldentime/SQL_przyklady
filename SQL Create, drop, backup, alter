@@ -1,0 +1,20 @@
+CREATE DATABASE First;
+DROP DATABASE First;
+BACKUP DATABASE First TO DISK = 'C:\backups\First.bak';
+
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
+
+
+CREATE TABLE FirstTable AS
+SELECT customername, contactname
+FROM customers;
+
+DROP TABLE FirstTable;
+TRUNCATE TABLE FirstTable;
+ALTER TABLE Customers ADD Email varchar(255);
